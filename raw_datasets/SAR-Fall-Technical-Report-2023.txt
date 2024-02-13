@@ -1,0 +1,1089 @@
+﻿Coordination Between Multiple UAVs for  
+Search and Rescue Missions 
+ 
+ 
+ 
+
+
+Advisor: Dr. Amar Raheja 
+Aerospace Engineering 
+December 12, 2023 
+ 
+ 
+Submitted by: 
+Russel Janairo
+Simon Nguyen
+Joshua Bicera
+Jason Yam
+Daniel Plascencia
+Truc Nguyen
+John Zhou
+________________
+
+
+Abstract
+Two autonomous Unmanned Aerial Vehicles (UAVs) are used in coordination to perform a search and rescue mission. The Search UAV, a DJI S1000, has been outfitted with a camera and, later, LiDAR sensor. The UAV is also equipped with a Jetson that processes the developed target recognition and obstacle avoidance algorithms written in Python. DIGI XBee transceivers are used for communication between vehicles. Once the target has been recognized, the target coordinates are transmitted to the Rescue UAV, which flies the most direct path toward the target coordinates, while the Search UAV returns to the rendezvous point. The Rescue UAV then safely releases a small payload, which is a filtered water bottle and hand radio, at the target coordinates and autonomously returns to the rendezvous point. A custom rescue drone has been designed and built using custom-designed carbon fiber plates and commercial off-the-shelf parts. It is equipped with a custom payload drop mechanism that utilizes a servo to open and close the payload doors when at the target location and a certain height. The custom Rescue UAV has had its first two successful flights and improvements from that flight data have been made. Future work will include improving the developed algorithms to include different altitudes to ensure maximum coverage and developing an obstacle avoidance algorithm to include depth perception and faster recognition of objects and/or targets, as well as the creation of additional drones.
+________________
+
+
+Team Organizational Chart
+
+
+Figure 0-1 Team Organization Chart
+    
+________________
+
+
+Table of Contents
+Abstract        2
+Team Organizational Chart        3
+Table of Contents        4
+List of Tables        7
+1 Background         8
+2 Objectives         8
+3 Project Work Breakdown Structure (WBS)        9
+4 Mission Description and Requirements         10
+5 Communication System         13
+6 Search UAV         17
+I. Search Vehicle        17
+II. Obstacle Avoidance        18
+1.II.1 Computer Vision Implementation        18
+III. Target Recognition         21
+7 Rescue UAV        24
+IV. Airframe Design        24
+1.IV.1 Analysis of Alternatives        24
+1.IV.2 Three Concepts Analysis        24
+V. Material Selection        27
+VI. Propulsion System        28
+VII. Structural Analysis        30
+1.VII.1 Motor Arm FEA Model        30
+1.VII.2 Landing Gear FEA Model        31
+7.I.1 Flight Controller Vibration Damping        34
+VIII. Stability & Control        34
+Electronics         38
+8 Payload Deployment Mechanism         43
+IX. Payload Selection         43
+X. Trade Study of Conceptual Designs         43
+XI. Manufacturing Plan        45
+XII. Final Mechanism Design        46
+9 Testing         47
+XIII. Test Cases         47
+XIV. Flight Testing         48
+10  Conclusion         52
+11 Future Work         52
+12 Acknowledgements         52
+13 References         53
+14 Appendix        54
+
+
+Figure 01 Team Organization Chart        3
+Figure 31 Work Breakdown Structure        10
+Figure 41 Mission Concept of Operation        11
+Figure 51 XBee Module        14
+Figure 52 Communication System        15
+Figure 6.11 Search UAV        17
+Figure 6.2.21 Code Excerpt for Obstacle Avoidance        21
+Figure 6.2.22 Example of Spatial Optical Flow        22
+Figure 6.31 Code Excerpt for Target Recognition        23
+Figure 7.1.21 Three View Drawing of Rescue Hexacopter Design        27
+Figure 7.31 Thrust Stand Result vs Manufacturer Performance Data        31
+Figure 7.4.11 Motor Arm FEA Model        31
+Figure 7.4.12 Maximum Stresses on Motor Arm        32
+Figure 7.4.21 Landing Gear FEA Model        32
+Figure 7.4.22 Plate von Mises Stress (psi)        33
+Figure 7.4.23 Beam Elements Moment Diagram (lb.in)        33
+Figure 7.4.31  Vibration Analysis        34
+Figure 7.51 Rescue UAV Body-Fixed Coordinate        34
+Figure 7.52 Rescue UAV Weight Breakdown        35
+Figure 7.53 Roll Response        35
+Figure 7.54 Pitch Response        36
+Figure 7.55 Yaw Response        36
+Figure 7.56 Hexacopter Response and PID Gains Value Post-Tuning        36
+Figure 7.61: Hardware Schematic        37
+Figure 7.62 Tarot TL2996 High Current Distribution Board        37
+Figure 7.63 KDEXF-UAS55 - 55A+ Electronic Speed Controller        38
+Figure 7.64 Pixhawk Cube Orange Flight Controller        38
+Figure 7.65 Mauch Hall HS-200-LV Power System Schematic        39
+Figure 7.66 Jetson Orin NX Onboard Computer        40
+Figure 7.67 Logitech C270 Camera        40
+Figure 7.68: HERE3 GPS Module        41
+Figure 7.69 TeraRanger 15m TOF Sensor        41
+Figure 8.11: LifeStraw Go Water Bottle and Motorola T600 2-Way Radio        42
+Figure 8.31 Payload System Concept        44
+Figure 8.41 Payload System Assembled        45
+Figure 9.21 Rescue UAV during Maiden Flight        47
+Figure 9.22 Rescue UAV in Flight during Second Flight Testing        48
+Figure 9.23 Flight Map of Rescue UAV        48
+
+
+________________
+________________
+List of Tables
+Table 4-1: Mission Requirements        12
+Table 4-2 Derived Requirements        13
+Table 5-1 Digi XBee Transmitter Technical Specifications        16
+Table 6.3-1 Jetson Xavier NX Technical Specification        22
+Table 7.1.2-1 Trade Study of Airframe Designs        24
+Table 7.1.2-2 Rescue UAV Specifications        25
+Table 7.2-1 Material Selection Trade Matrix        26
+Table 7.3-1 Motor Selection Trade Matrix        27
+Table 7.3-2 Propeller Selection        28
+Table 7.5-1 Rescue UAV CG Locations        32
+Table 8.2-1 Payload System Trade Study        41
+Table 9.1-1 Test Cases        44
+Table 14-1 Weight Breakdown of Rescue UAV        49
+
+
+________________
+
+
+1. Background 
+Unmanned Aerial Vehicles (UAVs) have been an area of interest in recent years due to the variety of tasks that these vehicles can accomplish. UAVs offer great versatility and with use of communication, computer vision, and autonomy technology, they can be considered a highly sought after asset. For a search and rescue mission, the UAVs can provide a safe way for human operators to reach a target and the UAVs cost a fraction of the price of a manned search and rescue team. Also, using smaller UAVs can help take advantage of their agility for complex tasks, such as navigating tree branches. The methods and techniques developed can also be used for other important tasks like payload delivery services.
+For a search and rescue mission, a swarm of UAVs would have the ability to search in rubble or trees for survivors and once detected, the location would be shared with a ground control station (GCS). In doing so, the search time would be cut down and the chances for the loss of life decreased. Having a drone drop a payload with emergency provisions, such as water and a hand radio, would further increase the chance of survival. A swarm of autonomous UAVs have the capability of gathering situational awareness data and locating over 90% of survivors in less than an hour after a major natural disaster (R.D. Arnold). 
+UAVs can also offer safety to human operators. UAVs are capable of operating in adverse weather and flying in areas humans are incapable of reaching. A case study done by the Buxton Mountain Rescue Team and Evolve Dynamics demonstrates the benefits of using a UAV in adverse weather and dangerous locations. The UAV also provided real-time situational awareness and allowed the team to create a rescue plan before trekking to the target (“Using Drones in Search & Rescue Operations”).
+Current limitations of UAVs in search and rescue missions include battery capacity and payload weight. The issues go hand in hand as the battery provides power for the mission, but an increase in payload weight would increase the power requirement. The battery weight would also increase to support the increase in power. Not only is weight critical in the power requirements but the mission performance as well. The issues of weight and battery capacity are ones that must be navigated to create the most efficient UAVs and missions.
+
+
+2. Objectives 
+The objective of the project is to design a system using two UAVs capable of finding objects and sending the location to other UAVs and a GCS. A Rescue UAV with a payload drop mechanism is to be developed as well as algorithms for target detection and obstacle avoidance. The Rescue UAV and payload drop mechanism is to be tested in ground and flight tests and the developed algorithms are to be tested in simulations and flight for different, realistic mission scenarios.
+________________
+
+
+3. Project Work Breakdown Structure (WBS)
+ The work breakdown structure was created to divide the system into two main systems and the corresponding subsystems. The ones shown below in Figure 3-1 were chosen as the foci of the project for this academic year. The mechanical team focused on the frame design, propulsion, and the payload drop mechanism. The software team focused on UAV communication, obstacle avoidance, and target recognition across all drones.
+  
+
+Figure 3-1 Work Breakdown Structure
+________________
+
+
+4. Mission Description and Requirements 
+The concept of operation for this mission is complex because the mission involves multiple vehicles and various networks of communication.  The first vehicle, denoted as black in Figure 4-1, is the Search UAV(s) that will autonomously takeoff and begin its search algorithm. It will also utilize the obstacle avoidance algorithm while searching for the target. Once the target is recognized, the Search UAV will send the GPS coordinates to the Rescue UAV, denoted in white in the figure, and the Ground Control Station (GCS). The Search UAV(s) will then return, and the Rescue UAV will autonomously takeoff towards the target. Once the Rescue UAV reaches the target location, it will drop off the payload and autonomously return. The concept of operations is shown visually in Figure 4-1 below.
+   
+Figure 4-1 Mission Concept of Operation
+________________
+
+
+Table 4-1 and 4-2 below shows the main and derived requirements the team found necessary for a successful mission.   
+Table 4-1: Mission Requirements
+Req.
+#
+	WBS
+Level affected by requirement
+	Requirement Statement
+	Validation Method
+	1.1
+	0001
+	Both Search and Rescue UAVs shall provide 15 minutes of flight time
+	Calculation, Simulations, Flight Testing
+	1.2
+	5100
+	Search UAV will use optimal path generation to reach a set number of waypoints in a circular area in 8 minutes.
+	Simulation, Ground Test, Flight Test
+	1.3
+	0001
+	The chassis of both Search and Rescue UAVs shall fit all avionics and hardware
+	Measurement
+	1.4
+	3000
+	The Rescue UAV shall be able to carry a payload of a weight no more than 2.5 lb
+	Calculation, Ground Testing Flight Testing
+	1.5
+	5300
+	Search UAV and Rescue UAV shall communicate with each other
+	Ground Testing, Flight Testing
+	1.6
+	5000
+	Both UAVs shall be able to implement both manual and autonomous takeoff and landing
+	Simulation, Flight Test
+	1.7
+	5000
+	Both vehicles shall be able to fly autonomously toward the destination
+	Simulation, Flight Test
+	1.8
+	5300
+	Search UAV shall be able to locate and recognize the target within 50 ft
+	Simulation, Ground Test, Flight Test
+	1.9
+	3300
+	Payload (Rescue) UAV shall be able to drop payload at target location within a 6 feet radius 
+	Simulation, Flight Test
+	1.10
+	5200
+	Both UAVs shall be able to avoid obstacles by starting an avoidance maneuver at 4 seconds before potential collision
+	Simulation, Flight Test
+	
+
+Table 4-2 Derived Requirements
+
+
+	Req.
+#
+	WBS
+Level affected by requirement
+	Requirement Statement
+	Validation Method
+	1.1-1
+	3100
+	Both Search and Rescue UAV’s Battery shall have sufficient capacity to power aircraft systems for at least 15 minutes
+	Amperage Testing
+	1.2-1
+	5300
+	Both Search and Rescue UAV’s antenna shall have a range of at least 1 mile
+	Signal Strength Testing, Ground and Flight Testing
+	1.4-1
+	3200
+	The Rescue UAV’s propulsion system shall be able to generate 35 lb amount of thrust to carry the payload 
+	Ground Testing
+	1.4-2
+	2200
+	The Rescue UAV’s frame shall have a payload capacity of 10 lb
+	Ground Testing, Flight Testing
+	1.5-1
+	5300
+	The communication signal between Search and Rescue UAVs shall be transmitted and processed within 1 second
+	Ground Testing
+	1.8-1
+	5200
+	The Search UAV shall have an additional sensor that provides a depth perception within 50 feet
+	Ground Test, Simulation, Flight Test
+	1.9-1
+	5400
+	The Rescue UAV shall position itself 15 feet above the target location prior to releasing the payload
+	Simulation, Ground Test, Flight Test
+	1.9-2
+	5300
+	The Rescue UAV shall position itself at the GPS coordinates given by the Search UAV within 7 minutes
+	Simulation, Ground Test, Flight Test
+	1.9-3
+	3300
+	Payload shall not be damaged when released from 15 feet
+	Ground Test, Flight Test
+	1.10-1
+	5200
+	Both UAVs shall start an avoidance maneuver when the distance to the obstacle is within 50 feet
+	Ground Test, Simulation, Flight Test
+	________________
+5. Communication System 
+XBee modules were used for communication between the vehicles and ground control station. The module itself can be seen in Figure 5-1 below. These modules were chosen for the range of 3200 meters (2 miles) and their affordability and ease of integration with on-board computers and the ground control station computer. The XBee uses serial communication and was able to read the coordinates and send them between the ground control station and each vehicle. The XBee would first send the set/sets of the waypoints that comprise the “lawnmower” circular path to each of the search vehicles. The communication system allows the inclusion of any number of search vehicles, so the UAV swarm configuration is possible. Then, after the successful target detection, the Search UAV that detected the target would transmit the GPS location of the target to the Ground Control Station and to the Rescue UAV. The Ground Control Station would monitor the position of the Search UAV and the position of the target. As mentioned above, the search UAV would also send a GPS location of the target to the Rescue UAV when it finds a target. The Rescue UAV, in turn, would immediately take off autonomously and follow to the location of the target to drop the payload at that location. Due to the nature of the mission, having 3200m of range is enough, since the vehicle’s battery would not be able to last for more than 2 miles of flight.  
+ A picture containing electronics
+
+Description automatically generated 
+
+Figure 5-1 XBee Module
+Figure 5-2 illustrates the necessary inputs and outputs to perform a successful mission. The search vehicle(s) will use its onboard camera to feed video that the Jetson Orin(s) will process for target recognition. Once the target is recognized, the microcomputer will send the current location to the XBee(s), which will communicate the information to the rescue vehicle XBee, as well as the ground control system. The XBee will send target location information to the Jetson Nano on the rescue vehicle. The information will be processed and sent to the flight controller which will command the vehicle to fly to the target’s location. Once the vehicle is over the target’s area, the payload drop mechanism will release the payload. This process will be autonomous with human monitoring, with the ground control station updating with either search vehicles’ coordinates throughout the mission. 
+  A diagram of a device
+
+Description automatically generated 
+Figure 5-2 Communication System
+Table 5-1 illustrates that the XBee transmitter is the ideal choice for this drone project due to its exceptional specifications. Operating in the 900 MHz frequency band, it provides an extended range of up to 3.2 kilometers (2 miles) or more, which makes it suitable for long-distance communication between the drones and the ground control station. With its high-power output of +24 dBm (250 mW), it ensures reliable and robust signal transmission. The module's support for various data rates, along with its mesh networking and multi-hop routing capabilities, enables efficient and stable communication among multiple search vehicles in a UAV swarm configuration. Additionally, its integration-friendly serial interface simplifies connectivity with on-board computers and the ground control station, making it a perfect fit for this drone project.
+________________
+
+
+Table 5-1 Digi XBee Transmitter Technical Specifications
+  
+
+
+
+
+
+Table 5-2 Digi XBee Transmitter Code Run  
+________________
+
+
+6. Search UAV 
+   1. Search Vehicle
+The DJI S1000 has been chosen as the search vehicle for the mission. It is affordable and offers plenty of mounting surfaces for any devices that need to be added, such as cameras and an on-board computer. It utilizes eight 500W DC motors and has a maximum takeoff weight of 24 pounds, allowing for a sufficient number of devices to be mounted on the vehicle. It also offers excellent stability in flight and a flight time of 15 minutes. The DJI S1000 or the Search UAV is shown in Figure 6.1-1 below.
+ A picture containing ground
+
+Description automatically generated 
+
+Figure 6.1-1 Search UAV
+   2. Obstacle Avoidance
+Upon designing the obstacle avoidance for this mission, an obstacle avoidance algorithm utilizing the camera module alongside an improved LiDAR sensing system was utilized. The UAV navigates using a complementary system of predictive and reactive approaches. We shift our focus from the LiDAR for this semester and to more of the work in the OPENCV optical flow with ZED camera – this component is a stereo camera that has a binocular camera that is used for obstacle avoidance pre-existing drones in the market. We ran into several problems from last semester for the LiDAR, which is one of the reasons why we need to put this section of the project on the backburner. Last summer made us explore a lot of components where we can use OPENCV optical flow in practice.  
+The ZED library is known for providing advanced depth-sensing capabilities through stereoscopic cameras. Unlike traditional monocular cameras that capture a single 2D image, stereoscopic cameras in the ZED library capture two slightly offset images, simulating the way human eyes perceive depth. This depth information can be crucial for various computer vision applications, including 3D reconstruction, object recognition, and augmented reality.
+
+
+When integrated with OpenCV's optical flow, the ZED library enhances the capabilities of motion analysis by adding depth information to the traditional 2D optical flow. Optical flow algorithms in OpenCV typically track the movement of pixel intensities between consecutive frames, providing information about the apparent motion in the 2D image plane. However, without depth information, it may be challenging to distinguish objects at different distances or estimate their relative motion accurately.
+By combining the ZED library's depth sensing with OpenCV's optical flow, you can achieve more robust and accurate motion analysis in three dimensions. This is particularly beneficial in scenarios where understanding the depth of objects in the scene is essential for making informed decisions, such as in robotics, autonomous navigation, or human-computer interaction.
+   
+      1. Computer Vision Implementation
+Due to LiDAR being able to only update once per second, a faster and more accurate system of obstacle avoidance is needed for high-speed flights. This is done using a forward-facing stereo camera with Sparse Optical Flow. If the UAV encounters an obstacle, the stereo camera will be able to provide an accurate readout of the obstacle’s distance and geometry allowing the UAV to create a more precise flight path around the obstacle.
+To implement the optical flow functionality on a drone, the process involves establishing a connection with the ArduPilot library, initializing the drone, and integrating the optical flow code into the main control loop. The code operates by capturing frames from the drone's camera and leveraging OpenCV for both obstacle detection and spatial optical flow computation. This entails obtaining depth maps that showcase the approximate distance of each pixel from the ZED camera and subsequently converting these depth maps into NumPy arrays for compatibility with OpenCV. Once the frames are processed, the code proceeds to detect contours within the image and identifies the center of the largest contour. The next step involves determining the specific area of the Region of Interest (ROI) where the large contour is located. Subsequently, the code responds accordingly, incorporating collision avoidance algorithms to dictate the drone's movement commands. 
+Continuous monitoring, coupled with the real-time updating of optical flow calculations, ensures that the drone actively responds to dynamic obstacles, thereby maintaining safe flight. Thorough testing and debugging are essential before deploying the drone in a flight test scenario. This comprehensive approach guarantees the successful execution of optical flow on the drone for effective collision avoidance and safe navigation.  An excerpt of the obstacle avoidance algorithm can be seen in Figure 6.2.2-1.
+  
+
+Figure 6.2.2-1 Code Excerpt for Obstacle Avoidance openCV with Zed Library
+On the obstacle avoidance aspect of the project, the goal was to efficiently detect objects to allow the drone to avoid them accordingly using a video analysis method called optical flow. Extensive research was conducted and evaluated two types of optical flow: sparse and dense optical flow are good candidates for detecting objects with the addition of depth map sensing from ZED library.
+Sparse optical flow is a lot faster and memory efficient. It utilizes Lucas Kanade’s algorithm to detect points of interest and uses those features to find the motion between two consecutive images. On the other hand, dense optical flow consumes more memory and is slower than sparse optical since it uses all the pixels as a grid for flow vectors, resulting in more accurate detections.
+With the transition of the Jetson Orin, the drone utilized the efficiency of sparse optical flow without much difference in performance. Therefore, sparse optical flow was implemented, giving an extremely accurate detection of objects.
+  
+
+Figure 6.2.2-2 Example of Dense Optical Flow implementation in ZED Camera
+________________
+
+
+   3. Target Recognition [a][b][c]
+The search drone’s primary object is to locate lost individuals in the forest. To accomplish this,we transition our Jetson inference mobile SSD net v2 to YOLO V8 . As of now, the object detection model performs effectively by detecting people with a high confidence rate while being 50-60 feet away from the target when estimated.
+We did a ground test with the camera and the Xbee transmitter. When it successfully spots a person, the person detection algorithm sends the exact coordinates of the search drone to the ground control station (GCS), allowing fast and efficient communication in search and rescue missions. A snippet of the code is shown in Figure 6.31
+However, it is important to note that the object detection model’s dataset does not include individuals in a dense forest, nor does it include various levels of brightness. The efficiency of the object detection model could be improved by accounting for these variables. Therefore, it is recommended that the model must go through additional training to fit within the criteria of the search and rescue project.
+  
+
+Figure 6.3-1 Code Excerpt for Target Recognition
+  
+
+Figure 6.3-2 Code Run for Target Recognition
+For target recognition, the Jetson Orin Nano was used over Jetson Xavier NX and Raspberry Pi due to several reasons. One reason is because the Jetson Orin Nano provides better hardware specifications to support the current machine learning model and its capabilities, compared to Jetson Xavier NX and Raspberry Pi. A more detailed summary of the Jetson Orin Nano is provided below, section 7.6, and the technical specifications are given in Table 6.3-1.
+
+
+ A screenshot of a computer
+
+Description automatically generated 
+
+Table 6.31 Jetson Orin Nano Technical Specification[d][e]
+
+
+In addition, the Jetson Orin Nano supports specific libraries needed for target recognition and obstacle avoidance. For instance, Jetson supports libraries such as OpenCV and TensorFlow. OpenCV is a Python library that allows image processing and computer vision tasks (such as facial recognition, object detection and much more). TensorFlow is another open-source Python library for machine learning and artificial intelligence. It could be used for a wide range of tasks that are involved in machine learning such as model retraining. Additionally, Jetson Orin supports Nvidia Cuda, a parallel computing platform and programming model developed by NVIDIA for general computing on graphical processing units (GPUs). The data set utilized specifically comes from Nvidia Cuda (“The World’s Smallest AI Supercomputer”). 
+________________
+
+
+7. Rescue UAV
+   1. Airframe Design
+      1. Analysis of Alternatives
+When designing the rescue vehicle, various options were considered between an Unmanned Ground Vehicle (UGV), fixed wing airplane, and a UAV. Although designing and manufacturing a UGV is the simplest option, the nature of the rescue missions requires the ground vehicle to travel through different terrain and inherit various obstacles. As a matter of fact, it is quite complicated to develop the obstacle avoidance algorithm and an optimal path to reach the destination as fast as possible. So, the UGV configuration was not pursued. Secondly, a fixed-wing airplane might be an interesting and promising approach due to its power efficiency to complete the mission, but its lack of hovering capabilities has hindered the team from fully developing a fixed wing airplane. Finally, a UAV with vertical takeoff landing and hovering characteristics was chosen as the conceptual design. The question now is which configuration of UAV is the most optimized.
+      2. Three Concepts Analysis
+The Rescue UAV design is the product of several design iterations. It was previously designed as a quadcopter, but the drawbacks of both the quadcopter design and manufacturing method were recognized. Thus, this year, it was decided to begin a new frame design. In Table 7.1.2-1, a trade study between three designs is shown. The different design frames considered were fixed-wing, quadcopter, hexacopter, or octocopter design. The requirements for hover capabilities and motor redundancy (to achieve our 99.9% mission success rate) ultimately determined the design. Hence, the hexacopter design was chosen due to its hover capabilities and motor redundancy. The octocopter design met these requirements as well and would increase payload capacity. However, excess payload capacity was not needed, and its design would complicate the manufacturing and building process. The quadcopter did not meet the motor redundancy requirement. 
+________________
+
+
+Table 7.1.2-1 Trade Study of Airframe Designs
+Quadcopter
+	Hexacopter
+	Octocopter
+	  
+
+	  
+
+	  
+
+	Pros:
+* Cost efficient
+* Highly maneuverable
+* Ease of manufacturing
+* Most compact
+Cons:
+* Limited payload
+* No backup motors (lack of survivability in case of OEI)
+	Pros:
+* Stable
+* Powerful (payload capability)
+* Compact
+* Safe, redundancy
+Cons:
+* More expensive
+* Quite complex in term of manufacture
+	Pros:
+* Most stable
+* Most powerful
+* Dual redundancy due to 8 motors
+Cons:
+* Most expensive
+* Hardest to manufacture
+* Bulky in size
+	
+
+The proposed hexacopter configuration layout and specifications are visualized and tabulated in Figure 7.1.2-1 and Table 7.1.2-2.
+  
+
+Figure 7.1.2-1 Three View Drawing of Rescue Hexacopter Design
+Table 7.1.2-2 Rescue UAV Specifications
+ Text
+
+Description automatically generated 
+
+________________
+
+
+   2.  Material Selection
+After a hexacopter configuration has been laid out and its performance has been confirmed to meet the most important requirements, a selection of material was conducted to balance between the budget, empty weight constraints and the quality of the build (structural integrity, range, endurance, etc.). Table 7.2-1 shows the material selection trade matrix with the final winner to be a carbon fiber sheet of 0.06” thickness in twill weave patterns.
+Table 7.2-1 Material Selection Trade Matrix
+
+
+	TPM 1:
+Density (lb/in3)
+	TPM 2:
+Cost Per Pound ($/g)
+	TPM 3:
+Tensile Strength (ksi)
+	Target Value
+	0.063
+	0.12
+	96
+	Carbon Fiber
+	0.054
+	0.32
+	240
+	ASA
+	0.039
+	0.035
+	6.091
+	Aluminum 6061-T6
+	0.097
+	0.019
+	42
+	​ 
+	TPM 1 (WF = 3)
+	TPM 2 (WF = 1)
+	TPM 3 (WF = 2)
+	Total Score
+	​ 
+	U​ 
+	W = WFxU​ 
+	U​ 
+	W = WFxU​ 
+	U​ 
+	W = WFxU
+	Carbon Fiber 
+	% = +15.3%
+Score: 9
+	27
+	% = -90.9%
+Score: 0
+	0
+	% = +85.7%
+Score: 9
+	18
+	45
+	ASA 
+	% = +47.0%
+Score: 9
+	27
+	% = +109.7%
+Score: 9
+	9
+	% = -176.1%
+Score: 0 
+	0
+	36
+	Aluminum
+	% = -42.5%
+Score: 0
+	0
+	% = +145.3%
+Score: 9
+	9
+	% = -78.3%
+Score: 0
+	0
+	9
+	
+
+TPM = Technical Performance Measurement        WF = Weighting Factor
+U = Unweighted Score                                W = Weighted Score
+% = |(TPM – Requirement)| / Requirement * 100         (Sign indicates worse or better)
+________________
+
+
+   3. Propulsion System
+One of the core subsystems in designing any UAV is the propulsion system. For a hexacopter configuration, a propulsion system consisted of motors and propellers combination to provide enough lift for the UAV to perform vertical takeoff, landing, hovering and all necessary maneuvers to get through predetermined waypoints mapped out by the users or any leading vehicles. Table 7.3-1 below shows the trade matrix for motor selection. 
+Table 7.3-1 Motor Selection Trade Matrix
+
+
+	TPM 1:
+Cost (USD $)
+	TPM 2:
+Weight (g)
+	TPM 3:
+Thrust (g)
+	Target Value
+	100 
+	120 
+	3300
+	T-MOTOR MN5006-450
+	84.99
+	110
+	3218
+	KDE4215XF-465
+	116.95
+	190
+	3320
+	KDE3510XF-475
+	95.95
+	120
+	3520
+	
+
+	TPM 1 (WF = 1)
+	TPM 2 (WF = 2)
+	TPM 3 (WF = 3)
+	Total Score​ 
+	
+
+	U​ 
+	W = WFxU​ 
+	U​ 
+	W = WFxU​ 
+	U​ 
+	W = WFxU​ 
+	T-MOTOR MN5006-450
+	% = +15%
+Score: 9
+	9
+	% = +8.33%
+Score: 3
+	6
+	% =-2.48%
+Score: 1
+	3
+	18
+	KDE3520XF-400
+	% = -17%
+Score: 0
+	0
+	% = -58.3%
+Score: 0
+	0
+	% = +0.61%
+Score: 3
+	9
+	9
+	KDE3510XF-475​
+	% = +5%
+Score: 9
+	9
+	% = +0%
+Score: 3
+	6
+	% = +6.67%
+Score: 3
+	9
+	24
+	
+
+According to the Table 7.3-1, the T motor and KDE3510 motor were quite similar in all TPMs, but the KDE3510XF-475 was chosen since (1) the maximum power limit of the T-motor was lower than the electric power its received when operated at maximum RPM, meaning the motor might overload (650W vs 660W) while KDE3510 motor at maximum power limit was within the manufacturer recommendation ; (2) this motor was getting too hot (Tmax = 171°F) compared to KDE3510XF-475 (156°F).
+Following up the motor selection, the performance data of this motor on KDE Direct product specifications was examined for a reference propeller sizing that was compatible with a 6S battery (“UAS Multi-Rotor Brushless Motors”). The requirement was to achieve a thrust to weight ratio of 2.9. A 15” x 5” propeller diameter x pitch satisfied this requirement. This was also the largest size of propeller recommended by KDE Direct. Conveniently, this size of propeller was available on the market for a price that fit the budget. Table 7.3-2 shows the possible vendors. The P15x5 propeller set was selected since it was the least expensive while maintaining the quality of the build.
+Table 7.3-2 Propeller Selection
+KDE Direct 15.5x5.3 CF Prop, Dual Edition
+	T-Motor NS15x5 Prop
+	P15x5 Prop-2PCS/PAIR 
+	  
+
+	  
+
+	  
+
+	Key Features:
+* Weight (one pair): 29.4g + 14g blade adapter
+* Thrust limit: 9.11kg (20.08lb)
+* Cost: $129.85 / 2 pairs
+Total Cost:
+$389.55
+	Key Features:
+* Weight (one pair): 13 g
+* Thrust limit: 4 kg
+* Cost: $56.99 / 2 pairs
+Total Cost:
+* $170.97
+	Key Features:
+* Weight (one pair): 21±1.5 g
+* Thrust limit: 6 kg
+* Cost: $55.90
+Total Cost:
+* $167.70
+	
+
+After the propulsion system has been developed, the thrust output of the motor and propeller combination were reconfirmed by using a thrust stand since the operational environment and the test location for performance data from KDE Direct were different. The post-processing test data was presented in Figure 7.3-1 to achieve a good exponential thrust curve closely matched with experimental data collected.
+ Chart, line chart
+
+Description automatically generated 
+
+Figure 7.3-1 Thrust Stand Result vs Manufacturer Performance Data
+   4. Structural Analysis
+To assure that the drawn UAV frame could withstand all the mechanical and aero loads occurring during the mission, two load cases for the two most critical failure components were idealized in the airframe which was the motor arm under maximum lift and the landing gear under 4g’s hard landing condition.
+      3. Motor Arm FEA Model
+The motor arm was split into 6 components that were connected by using FEMAP connections tools. The whole assembly was then meshed as tetrahedral solid components using FEMAP Meshing toolbox. Figure 7.4.1-1 showed the maximum total deflection of the motor arm to be 0.041” occurring at the arm tip. The model was constrained by fixing 4 holes on the two clamping brackets in 6 DOFs that held the arm and the UAV’s chassis together. Lift force from the motor was modeled by an evenly distributed load of 1.89lbs/in2 acting in the +y-direction. This would result in an equivalent applied load of 8.94lbs acting at the center of the motor mounting plate. The analysis was quite conservative since it already accounted for 15% increase in lift compared to maximum lift of 7.5lbs based on thrust stand tests in the previous section. 
+ A picture containing diagram
+
+Description automatically generated 
+
+Figure 7.4.1-1 Motor Arm FEA Model
+ Diagram
+
+Description automatically generated with medium confidence 
+
+Figure 7.4.1-2 Maximum Stresses on Motor Arm
+One final step to assure the structural integrity of the motor arm design before putting it in production was finding the factor of safety for the most critical part of its motor arm. Figure 7.4.1-2 showed the maximum von Mises stress to be 10.38 ksi. This stress occurred on the carbon fiber motor mount plate whose ultimate tensile strength was 322 ksi. Thus, the factor of safety was 31 which far exceeds necessary integrity of structure (T. Coburn).
+      4. Landing Gear FEA Model
+Using a similar approach to the motor arm model, a stimulation of the 4g’s hard landing on the landing gear leg in FEMAP was created. The bottom chassis was modeled using CQUAD4 plate elements with carbon fiber material property. The vertical and horizontal legs were modeled with CBEAM element of circular tube section, also using carbon fiber material except for where the aluminum joints are. The whole model is then nodal fixed – pinned at the two tip of one horizontal leg that will comes into contact with the ground first. Then the applied load of 4g’s is modeled as downward distributed load of 1.12lbs/in2 on the chassis (see Fig 7.4.2-1). This load is equivalent to a 59lbs force at the CG of the UAV that already takes into account 115% the maximum gross takeoff weight of the vehicle times the 4g acceleration upon impact. 
+ Diagram
+
+Description automatically generated 
+
+Figure 7.4.2-1 Landing Gear FEA Model
+There are two factors of safety that needs to be checked. The first check is on the bottom chassis plate von Mises stress against its allowable. The second check is the vertical leg buckling. In other words, this second check involves comparing the axial load on the vertical leg (~63 kips) from the FEA model and the computed buckling allowable load of the column (383 kips). The first check results in a 2.15 factor of safety and the second check results in a 6.08 factor of safety. These numbers are deemed acceptable to move on to our manufacturing plan. Figures 7.4.2-2 and 7.4.2-3 below show the von Mises stress on the plate and the moment diagram on beam elements. 
+ Chart
+
+Description automatically generated 
+
+Figure 7.4.2-2 Plate von Mises Stress (psi)
+ Diagram
+
+Description automatically generated with medium confidence 
+
+Figure 7.4.2-3 Beam Elements Moment Diagram (lb.in)
+________________
+
+
+      1. Flight Controller Vibration Damping
+In order to achieve the most precise control of the Rescue UAV, the Pixhawk Cube flight controller needs to be supported by a damping system to minimize its vibration due to induced reaction moments from motors and propeller rotation. Vibe balls are used to support the Pixhawk mounting plate. By doing this, the whole flight controller is not directly in contact with the UAV’s airframe, which helps to damp out a massive number of vibrations. On the second flight test of the Rescue UAV, the IMU’s instantaneous acceleration in all three axis was collected and presented in Figure 7.4.3-1 below. According to the Ardupilot documentation, the acceptable acceleration in the X and Y axis should lie between -3 to +3 m/s2, and the Z-acceleration should be from -5 to +15 m/s2. As shown in Figure 7.4.3-1, the vibration damping system has been designed to meet these recommendations.
+ A screen shot of a computer
+
+Description automatically generated with low confidence 
+
+Figure 7.4.3-1  Vibration Analysis
+   5. Stability & Control
+Firstly, the center of gravity (CG) of the vehicle is estimated and tabulated below in Table 7.5-1. The correlating coordinate system of the UAV is shown in Figure 7.5-1. The overall weight breakdown is seen in Figure 7.5-2 and the detailed weight breakdown can be found in the appendix in Table 14-1. Despite the actual hexacopter’s CG being quite off from the reference axis due to manufacturing inconsistencies, these can be corrected using Ardupilot’s stability augmentation system.
+Table 7.5-1 Rescue UAV CG Locations
+Hexacopter Empty CG Location Measured From Bottom Chassis (in)
+	x-cg
+	-0.032
+	y-cg
+	-0.046
+	z-cg
+	-1.024
+	Empty Weight (lb)
+	11.77
+	
+
+ Diagram, timeline
+
+Description automatically generated 
+
+Figure 7.5-1 Rescue UAV Body-Fixed Coordinate
+  
+
+Figure 7.5-2 Rescue UAV Weight Breakdown
+Besides structural analysis, the hexacopter also needs to provide ease of control for the flight test pilot during its maiden flight. To accomplish this, pre-built and default Proportional-Integral-Derivative (PID)s control gain was loaded onto the Pixhawk Orange Cube flight controller. These default values are a good starting point since the designed configuration is a standard flat 6 identical motors, propellers set. Although there are some unwanted values due to manufacturing inconsistencies, the UAV provides ease of control in pitch and roll under loiter and stabilizes flight modes according to the test pilot (ArduPilot Dev Team). The hexacopter did experience quite a bit of overshoot in the yaw direction, therefore further tuning and trimming should be made before getting the vehicle ready for autonomous flight. This is a required step since the rescue mission requires the UAV to precisely hover above the target for at least 30 seconds. Unless either roll, pitch or yaw control are precise, the UAV cannot achieve a 100% mission success rate to deliver the payload. Figure 7.5-3 through 7.5-5 below is data collected from live tuning flight test. The actual output roll, pitch and yaw angle displacements are pretty well-matched with the desired input. All PID gains are recorded and saved in the Pixhawk Orange Cube so that the vehicle is ready for autonomous missions; the values can be seen in Figure 7.5-6. 
+ A screenshot of a computer
+
+Description automatically generated with medium confidence 
+
+Figure 7.5-3 Roll Response
+ A screen shot of a graph
+
+Description automatically generated with medium confidence 
+
+Figure 7.5-4 Pitch Response
+ A screen shot of a graph
+
+Description automatically generated with medium confidence 
+
+Figure 7.5-5 Yaw Response
+ A screenshot of a computer
+
+Description automatically generated with medium confidence 
+
+Figure 7.5-6 Hexacopter Response and PID Gains Value Post-Tuning
+________________
+
+
+Electronics 
+A schematic view of the hardware used for the project is shown in Figure 7.6-1 below. The detailed description of each hardware is discussed in the following paragraphs.
+  
+
+Figure 7.6-1: Hardware Schematic
+The power distribution board management module, shown in Figure 7.6-2, is suitable for the hexacopter drone configuration. It supports multi-axis drone installations that provide a 125 W power supply with the total current reaching to 480 A. The main power cord is soldered with the AS150 fireproof plug into the bullet connector. 
+  
+
+Figure 7.6-2 Tarot TL2996 High Current Distribution Board
+The KDEXF-UAS55 in Figure 7.6-3 is the electronic speed controller that is designed for multi-rotor applications and utilizes a high-speed response to flight system commands. It boasts a proprietary algorithm for up to 600 Hz refresh rate control and with tuning, the system can react almost instantly to the flight commands (“KDEXF-UAS55 55A+”).
+  
+
+Figure 7.6-3 KDEXF-UAS55 - 55A+ Electronic Speed Controller
+The flight controller utilized is the Pixhawk Cube Orange, which runs a firmware called Ardupilot. Through the Dronekit programming library or the Mission Planner software, control commands can be sent and received by Ardupilot, which handles all the flight controls of the UAV. The flight controller has upgraded triple redundant IMU sensors, and all inputs and outputs go through an 80-pin DF17 connector (The Cube Orange/+ with ADSB-in Overview”). The Pixhawk Cube Orange is shown below in Figure 7.6-4.
+   
+Figure 7.6-4 Pixhawk Cube Orange Flight Controller
+To power the motors and flight controller, a Mauch Hall sensor board single battery voltage, ampere power module was implemented. This power module allows live monitoring of battery level and power dissipated to the distribution board via Mission Planner GCS. The Mauch HS-200-LV sensor board can handle a maximum current of 200A, which provides extra safety by ensuring the 55A ESCs never fail. In addition, the kit provides dual redundancy to the Rescue UAV power system with a two-power supply. This guarantees an always “on” flight controller under any circumstances. A power subsystem schematic is shown in Figure 7.6-5 below.
+ A picture containing text, electronics, electronic engineering
+
+Description automatically generated 
+
+Figure 7.6-5 Mauch Hall HS-200-LV Power System Schematic
+For processing the sensor data and collision avoidance algorithm, a Jetson OrinNX minicomputer was used on-board of the UAVs. The computer has 8 GB RAM, a max processing speed of 1.9 GHz, and 16 GB of data storage space. Additionally, there is one USB 3.2 slot and three USB 2.0 slots. The computer runs on 19V power at 5 Amps (“The World’s Smallest AI Supercomputer.”). The Jetson OrinNX minicomputer is shown below in Figure 7.6-6.
+  
+
+Figure 7.6-6 Jetson Orin Nano Onboard Computer
+A Logitech C270 camera, shown Figure 7.6-7 below, will be used to receive a video input of the Search UAV’s surroundings for obstacle detection. The camera is very simple, cost effective, and compatible with the Jetson Orin NX. It is 0.9 megapixel and has a 55-degree dFOV (“Logitech C270, 55° dFOV, Applicable for Jetson Nano.”). 
+  
+
+Figure 7.6-7 Logitech C270 Camera[f][g]
+ The GPS module used for navigation and drone collaboration is a HERE 3 GPS module with built-in compass, shown in Figure 7.6-8. It has a navigation update rate of maximum 8 Hz and a positioning accuracy of 2.5 meters in 3D FIX or 0.025 meters in RTK. Besides global universal GPS data, the HERE 3 is also compatible with DJI RTK based GPS for improved location precision which makes it easier to accomplish the CONOPS requirements (precise payload drop). Due to time and resources constraints, the RTK GPS implementation has not been studied and used in this project, this is a subject left for future research.
+  
+
+Figure 7.6-8: HERE3 GPS Module
+TeraRanger 15m TOF sensor, shown in Figure 7.6-9 below, will be used for the obstacle avoidance algorithm on the onboard computer. Its main advantages are its field of view and refresh rate; 2-degree FOV and 270 Hz. The maximum range is 15 meters with an accuracy up to 8 meters (“Medium-Range 15m TOF Sensor: Distance Sensor: Level Sensing.”).
+  
+
+Figure 7.6-9 TeraRanger 15m TOF Sensor
+________________
+
+
+
+
+8. Payload Deployment Mechanism 
+   1. Payload Selection 
+An important step in the design process is the payload selection. For this search and rescue mission, a filtered water bottle and hand radio have been selected to be the payload carried on the Rescue UAV. The water bottle is the reusable LifeStraw Go 22 oz. The filtration system within it allows the survivor to drink any water found. The two-way, hand radio is the waterproof Motorola Talkabout T600. It has a 35-mile range and battery life of 23 hours on DC power. The radio can also provide weather updates and has a flashlight feature. The total weight of the payload, assuming the water bottle is filled, and the radio has batteries, is approximately 2.5 lbs. Below in Figure 8.1-1, both payloads are shown.
+ Graphical user interface
+
+Description automatically generated 
+          
+Figure 8.1-1: LifeStraw Go Water Bottle and Motorola T600 2-Way Radio
+   2. Trade Study of Conceptual Designs 
+A trade matrix consisting of different conceptual payload mechanism designs was used to down select the final design and can be seen in Table 8.2-1. Three different designs were considered for the payload mechanism: a cylindrical rolling door, a box with a solenoid, and a tipping bucket. The box utilizing a solenoid to hold the door closed during transit was ultimately chosen for its key characteristics. Unlike the other two designs, the box with a solenoid was identified to be easier to manufacture, assemble, and operate. The only drawback identified in the winning design was a limitation to the door configuration which would prohibit the doors from closing once the solenoid was retracted. The solenoid design also offered an opportunity for our program team to practice working with mission planner to communicate and operate hardware with their own program. 
+________________
+
+
+Table 8.2-1 Payload System Trade Study[h]
+Cylinder Rolling Door
+	Box with Solenoid
+	Tipping Bucket
+	  
+
+	  
+
+	  
+
+	Pros
+-Compact design
+-Aerodynamic design
+-Payloads are protected
+Cons:
+-Manufacture complexity
+	Pros:
+-Payloads are protected
+-Extra capacity
+-Ease of manufacture
+Cons:
+-Lids cannot be closed once opened
+	Pros:
+-Simple design
+-Payload will release
+Cons:
+-Vehicle dynamic stability issue during payload release
+-Bulky design
+	
+
+________________
+
+
+   3. Manufacturing Plan 
+The payload box was designed on SOLIDWORKS and sent to a CNC/laser cutting service, SendCutSend. The material chosen for the payload box was carbon fiber. Carbon fiber was chosen in order to match the frame design and to keep the payload protected in case of mission failure. The panels were designed to fit into each other and use 3M DP420 epoxy instead of fasteners to hold the assembly together. The solenoid mounting brackets were made from aluminum angle to reduce weight while keeping rigidity. Although manufacturing of the carbon fiber plates was outsourced, all assembly was done in house. The three-view schematic of the payload box is shown in Figure 8.3-1.
+  
+
+Figure 8.3-1 Payload System Concept
+________________
+
+
+   4. Final Mechanism Design 
+The final design of the solenoid payload drop mechanism was successfully assembled, as seen in Figure 8.4-1, and integrated into the hexacopter frame. Initially, the payload doors were to be held together by a solenoid placed in the middle of the payload, at the edge of the doors. However, due to complications with the mounting brackets’ compatibility with the length of the solenoid shaft, the placement of the solenoid was changed. Another addition to the payload design that was made was to increase the spacing between the doors and the payload walls, in order to expand its capacity. This space increase makes it so straps can be passed through mounting holes and transform the top plate of the payload system into a battery holder.
+  
+
+Figure 8.4-1 Payload System Assembled
+________________
+
+
+9. Testing 
+   1. Test Cases 
+Testing done during the academic year are listed below in Table 9.1-1. Ground tests were done in Cal Poly Pomona’s UAV Lab and flight testing was done on Spadra Farms.
+Table 9.1-1 Test Cases
+# 
+	Test Purpose 
+	Testing Method 
+	Test Results 
+	1 
+	Motor Thrust Test for maximum thrust provided by in motor arms​
+	Ground Test (Thrust Stand) 
+	100% Successful
+	2 
+	Flight Test of Rescue UAV (Maiden Flight)​
+	Flight Test 
+	100% Successful
+	3 
+	Flight test of UAV for fine tuning controls
+	Flight Test 
+	100% Successful
+	________________
+
+
+   2. Flight Testing 
+Flight testing for the project was performed at Spadra Farms with the help of Tristan Sherman as the test pilot. A series of preflight checks were performed to ensure safety and success of the test. This included checking the propeller direction, structure stability, connecting the battery, and motor stability. After the team had gone through the preflight checks, the test pilot double checked the UAV for flight readiness.
+The maiden flight of the Rescue UAV was performed on February 4th, 2023; the purpose of this flight test was to ensure that the Rescue UAV could fly after finishing the assembly. During the first flight test, the UAV flew for a total of 2 minutes and successfully landed. The UAV did experience overshoot in the yaw direction, very low thrust during takeoff, and stability during loiter. Below in Figure 9.2-1, the UAV is shown during its first flight. For the next flight test, it was proposed to autotune the UAV in a stabilized mode, review the pilot input post tuning process with new P and D gain, and attempt a doublet, frequency sweep maneuver to collect data for system identification purposes. 
+  
+
+Figure 9.2-1 Rescue UAV during Maiden Flight
+Another flight test was performed on March 11th, 2023, with the purpose of tuning the controls of the UAV. From the first flight test, the UAV experienced overshoot in the yaw direction. As a solution, autotuning of the UAV was performed during the flight test and the resulting roll, pitch, and yaw response as well as the PID gains are shown in section 7.5, Figure XYZ. In Figure XYZ, the Rescue UAV is shown in flight during the second flight test and in Figure XYZ, the flight map of the Rescue UAV from Mission Planner is shown. 
+  
+
+Figure 9.2-2 Rescue UAV in Flight during Second Flight Testing
+
+
+
+
+  
+
+Figure 9.2-3 Flight Map of Rescue UAV
+
+
+In order to test the autonomous capabilities of the rescue drone, a flight plan was created in Ardupilot Mission Planner and uploaded to the drone. The flight plan was designed in order to simulate what a real-world search protocol might look like. On the 28th of July, the rescue drone successfully carried out its mission without human input. Under ideal weather conditions (good visibility and relatively low wind speeds), the drone successfully took off. It then carried out its flight plan over three minutes and fourteen seconds, consistently maintaining straight and level flight. At the end of the flight test, the drone landed without any issues. Since the flight plan was created in mission planner, the autonomy was tested on its own, without collision avoidance such as LiDAR or Optical Flow enabled. In addition, the rescue drone was tested without the attached payload, meaning that further testing will need to be done in order to ensure that stability can be maintained in a real-world scenario (where the payload would still be attached).
+
+
+On the 28th of July, a subsequent test was carried out with a small payload on board the aircraft: a plastic water bottle and a rock. This test was not autonomous, but instead phases of flight were executed manually by the pilot. The aircraft was able to land successfully, but the payload was not able to survive the test: the rock shattered upon contact with the ground, and the water bottle exploded. In addition, during the descent phase of the flight, the drone strayed away from the acceptable landing area (to the right), before the pilot successfully landed the drone. This can be attributed to human error however, and so the deviation in flight is not a major concern.
+
+
+However, in order to confirm this, a second payload test was performed. Once again, the flight of the aircraft was handled manually, and the flight plan was replicated somewhat (takeoff, ascent to altitude, payload drop, descent, and landing). Instead of using the shattered wreckage of the previous drop, a 3D Printed object was used as a crude substitute for the actual payload. It should be noted that the object was much smaller and lighter than the water bottle/rock combination. This flight test was carried out successfully, with both the drone and payload returning to the ground successfully. This meant that the deviation from the original flight path in the first payload test can be reliably attributed to human error. However, because the 3D Printed object was smaller and much denser than the original payload components, it is difficult to assess at this time whether or not the actual payload that we intend to place on the rescue drone will be able to survive a drop from altitude.
+
+
+After heavy redesign and reconfiguration, the new search drone took its maiden flight on the fifth of July 2023. During this initial flight test, the drone was unable to yaw, but the pilot successfully managed to fly it around before landing it. The cause for being unable to yaw properly was a faulty transmitter in the flight controller-this issue was quickly rectified when the transmitter was replaced. There was also some difficulty that came about as a result of the relatively high winds that were present that day, which also contributed to the bucking and irregular motion of the drone.
+
+
+The second test was carried out on the 20th of July. By this time, the issues with the faulty transmitter had been fully rectified and the drone had been recalibrated for a better ability to control the aircraft. On the day of the test, the search drone took off successfully, before retracting its landing gear successfully. After flying and maneuvering with the landing gear up, the search drone was able to successfully redeploy the landing gear and return to the ground successfully. However, a caveat of this flight was that a throttle reversal had occurred after landing, and so the search drone was recalibrated back to its original position.
+
+
+After recalibration and rectification of the throttle reversal issue, the drone was ready for an autonomous flight test. Similar to the rescue drone, the waypoints were set up in order to emulate what a real-life search mission’s plan would look like. The flight lasted three minutes and twenty-one seconds. During this flight, the aircraft’s landing gear retracted successfully        
+
+
+
+
+
+
+________________
+
+
+10.  Conclusion 
+In conclusion, the material selection and manufacture of the rescue vehicle and payload system were successfully completed along with the buildup of the software team. The propulsion system motor and propellers were selected and tested on the thrust stand to verify the Rescue UAV has enough lift for the required weight. FEA models were made of the UAV structures to verify it could withstand the maximum loads expected of it in the worst-case scenario. The structures modeled were the motor arm and landing gear since they are likely to experience large loads.  During flight testing the CG was found along with the stability and roll, pitch, and yaw response. These will need further tuning to optimize the Rescue UAV’s integration with the on-board computer. 
+11. Future Work 
+For the future, testing for the obstacle avoidance must be done. This will be accomplished with the implementation of an OPENCV optical flow in ZED X stereo camera to the current components, as well as additional flight testing. This will allow for more proficient use of ZED SDK libraries and new functionalities not present in the initially used model to better achieve obstacle avoidance. In addition, the transition from DroneKit to MAVSDK has faced connection issues with the drone; work to fix the connection has been done, but nothing has been successful yet. Future work can also include the addition of another Search UAV to create a swarm of UAVs for search and rescue missions. Making the automation drone code to work using MAVSDK in the PX4 platform instead of Ardupilot. Lastly, updating the human target recognition flight test, with a possibility of implementing a thermal vision camera human detection.
+12. Acknowledgements 
+The team would like to express a special thanks to our school advisor Dr. Subodh Bhandari and Lockheed Martin Corporation for the technical guidance and funding support.  We would also like to thank Tristan Sherman & Alex Walsh for being the test pilot during the flight tests of the Rescue UAV, the last team mechanical team who made the drones, previous project leads and lastly the last software lead who made the time to help out for guidance in documentation.
+________________
+
+
+13. References 
+ArduPilot Dev Team, N/A. “Relay Switch.” Relay Switch - Copter Documentation, ArduPilot, https://ardupilot.org/copter/docs/common-relay.html. 
+ArduPilot Dev Team, N/A. “Tuning.” Tuning - Copter Documentation, ArduPilot, https://ardupilot.org/copter/docs/common-tuning.html. 
+“IMX219-200 Camera, 200° FOV, Applicable for Jetson Nano.” Waveshare, www.waveshare.com/imx219-200-camera.htm.[i]
+“KDEXF-UAS55 55A+ Electronic Speed Controller (ESC) for Electric Multi-Rotor (UAS) Series.” KDE Direct, www.kdedirect.com/collections/uas-multi-rotor-electronics/products/kdexf-uas55.
+“Medium-Range 15m TOF Sensor: Distance Sensor: Level Sensing.” Terabee, 16 May 2023, www.terabee.com/shop/lidar-tof-range-finders/teraranger-evo-15m/. Accessed 17 May 2023.
+Nelson, Robert C. Flight Stability and Automatic Control. 1998.
+Ogata, Katsuhiko. Modern Control Engineering. Prentice Hall, 2010.
+R.D. Arnold, H. Yamaguchi & T. Tanaka, “Search and rescue with autonomous flying robots through behavior-based cooperative intelligence,” Int J Humanitarian Action 3, 18 (2018).  
+T. Coburn, “Aerospace Strength Handbook – Volume I,” January 10, 2021
+“The Cube Orange/+ with ADSB-in Overview.” The Cube Orange/+ With ADSB-In Overview - Copter Documentation, ardupilot.org/copter/docs/common-thecubeorange-overview.html?highlight=orange%2Bcube.
+“The World’s Smallest AI Supercomputer.” NVIDIA, www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-xavier-nx/.[j]
+“UAS Multi-Rotor Brushless Motors,” KDE Direct, 2021, www.kdedirect.com/collections/uas-multi-rotor-brushless-motors.
+“Using Drones in Search & Rescue Operations - Cp.Catapult.Org.Uk.” USING DRONES IN SEARCH AND RESCUE OPERATIONS, 16 Mar. 2022, cp.catapult.org.uk/wp-content/uploads/2022/03/DronesInSearchAndRescue_CaseStudy.pdf. 
+________________
+
+
+14. Appendix
+Table 14-1 Weight Breakdown of Rescue UAV
+components
+	W
+	x
+	y
+	z
+	Wx
+	Wy
+	Wz
+	
+
+	lb
+	in
+	in
+	in
+	
+
+	
+
+	
+
+	Top chassis
+	0.160
+	0.000
+	0.000
+	0.968
+	0.000
+	0.000
+	0.155
+	Bot chassis
+	0.244
+	0.000
+	0.000
+	0.000
+	0.000
+	0.000
+	0.000
+	Motor arm 1
+	0.646
+	0.000
+	13.951
+	0.588
+	0.000
+	9.016
+	0.380
+	Motor arm 2
+	0.646
+	0.000
+	-13.951
+	0.588
+	0.000
+	-9.016
+	0.380
+	Motor arm 3
+	0.646
+	12.542
+	-7.241
+	0.588
+	8.105
+	-4.680
+	0.380
+	Motor arm 4
+	0.646
+	-12.542
+	7.241
+	0.588
+	-8.105
+	4.680
+	0.380
+	Motor arm 5
+	0.646
+	12.542
+	7.241
+	0.588
+	8.105
+	4.680
+	0.380
+	Motor arm 6
+	0.646
+	-12.542
+	-7.241
+	0.588
+	-8.105
+	-4.680
+	0.380
+	Landing gear 1
+	0.357
+	0.000
+	5.885
+	-7.193
+	0.000
+	2.098
+	-2.565
+	Landing gear 2
+	0.357
+	0.000
+	-5.885
+	-7.193
+	0.000
+	-2.098
+	-2.565
+	Battery support
+	0.410
+	0.000
+	0.000
+	-2.152
+	0.000
+	0.000
+	-0.883
+	Battery
+	4.211
+	0.000
+	0.000
+	-2.452
+	0.000
+	0.000
+	-10.324
+	Power Distribution board
+	0.713
+	0.000
+	
+
+	0.968
+	0.000
+	0.000
+	0.690
+	Pixhawk orange cube
+	0.077
+	0.000
+	0.000
+	1.452
+	0.000
+	0.000
+	0.112
+	Mauch power system
+	0.125
+	-3.703
+	0.000
+	0.726
+	-0.463
+	0.000
+	0.091
+	Here 3 GPS
+	0.161
+	0.500
+	-3.400
+	2.823
+	0.081
+	-0.549
+	0.456
+	Bot ESCs (6x)
+	0.728
+	0.000
+	0.000
+	-0.250
+	0.000
+	0.000
+	-0.182
+	Propellers (6x)
+	0.351
+	0.000
+	0.000
+	1.966
+	0.000
+	0.000
+	0.689
+	sum
+	11.77
+	
+
+	
+
+	
+
+	-0.382
+	-0.549
+	-12.048
+	
+
+	
+
+	
+
+	
+
+	CG
+	-0.032
+	-0.047
+	-1.024
+	
+
+[a]Software Description update
+[b]I can work on this
+[c]Done
+[d]Update computer
+[e]Done
+[f]Update camera
+[g]Done
+[h]Update solenoid to servos
+[i]??
+[j]???
