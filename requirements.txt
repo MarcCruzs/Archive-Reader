@@ -1,0 +1,7 @@
+nltk
+matplotlib
+pandas
+numpy
+seaborn
+conda-forge::langdetect
+wordcloud
