@@ -5,3 +5,4 @@ numpy
 seaborn
 conda-forge::langdetect
 wordcloud
+inflect
