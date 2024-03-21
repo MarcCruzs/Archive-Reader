@@ -1,4 +1,5 @@
 nltk
+sklearn
 matplotlib
 pandas
 numpy
