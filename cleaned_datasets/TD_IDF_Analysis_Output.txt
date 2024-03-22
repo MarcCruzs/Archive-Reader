@@ -1,278 +1,278 @@
-Keyword: model, Frequency: 34
-Keyword: images, Frequency: 31
-Keyword: 35, Frequency: 28
-Keyword: data, Frequency: 24
-Keyword: image, Frequency: 24
-Keyword: dataset, Frequency: 23
-Keyword: learning, Frequency: 23
-Keyword: machine, Frequency: 22
-Keyword: object, Frequency: 21
-Keyword: models, Frequency: 21
-Keyword: software, Frequency: 20
-Keyword: suas, Frequency: 20
-Keyword: competition, Frequency: 19
-Keyword: team, Frequency: 18
-Keyword: alphanumeric, Frequency: 18
-Keyword: phase, Frequency: 18
-Keyword: color, Frequency: 18
-Keyword: shape, Frequency: 17
-Keyword: training, Frequency: 17
-Keyword: trade, Frequency: 17
-Keyword: high, Frequency: 16
-Keyword: standardized, Frequency: 16
-Keyword: yolo, Frequency: 16
-Keyword: grade, Frequency: 15
-Keyword: description, Frequency: 15
-Keyword: members, Frequency: 14
-Keyword: uav, Frequency: 14
-Keyword: detection, Frequency: 13
-Keyword: need, Frequency: 13
-Keyword: study, Frequency: 12
-Keyword: obstacle, Frequency: 12
-Keyword: train, Frequency: 12
-Keyword: odlc, Frequency: 12
-Keyword: recruitment, Frequency: 12
-Keyword: weighted, Frequency: 12
-Keyword: avoidance, Frequency: 11
-Keyword: time, Frequency: 11
-Keyword: objects, Frequency: 10
-Keyword: collection, Frequency: 10
-Keyword: work, Frequency: 10
-Keyword: implementation, Frequency: 10
-Keyword: accuracy, Frequency: 10
-Keyword: detect, Frequency: 10
-Keyword: recognition, Frequency: 10
-Keyword: methodology, Frequency: 9
-Keyword: using, Frequency: 9
-Keyword: weight, Frequency: 9
-Keyword: realtime, Frequency: 9
-Keyword: 200, Frequency: 9
-Keyword: october, Frequency: 9
-Keyword: ml, Frequency: 9
-Keyword: 12, Frequency: 9
-Keyword: able, Frequency: 9
-Keyword: various, Frequency: 9
-Keyword: folder, Frequency: 9
-Keyword: processing, Frequency: 8
-Keyword: optimal, Frequency: 8
-Keyword: faster, Frequency: 8
-Keyword: aerial, Frequency: 8
-Keyword: mission, Frequency: 8
-Keyword: figure, Frequency: 8
-Keyword: inference, Frequency: 8
-Keyword: 10, Frequency: 8
-Keyword: multiple, Frequency: 7
-Keyword: trained, Frequency: 7
-Keyword: tasks, Frequency: 7
-Keyword: rgb, Frequency: 7
-Keyword: project, Frequency: 7
-Keyword: datasets, Frequency: 7
-Keyword: 100, Frequency: 7
-Keyword: circles, Frequency: 7
-Keyword: august, Frequency: 7
-Keyword: consumption, Frequency: 7
-Keyword: values, Frequency: 7
-Keyword: class, Frequency: 7
-Keyword: circle, Frequency: 6
-Keyword: height, Frequency: 6
-Keyword: deep, Frequency: 6
-Keyword: research, Frequency: 6
-Keyword: medium, Frequency: 6
-Keyword: design, Frequency: 6
-Keyword: shapes, Frequency: 6
-Keyword: required, Frequency: 6
-Keyword: cost, Frequency: 6
-Keyword: speed, Frequency: 6
-Keyword: range, Frequency: 6
-Keyword: studies, Frequency: 6
-Keyword: bounding, Frequency: 6
-Keyword: rcnn, Frequency: 6
-Keyword: target, Frequency: 6
-Keyword: look, Frequency: 6
-Keyword: results, Frequency: 6
-Keyword: semester, Frequency: 6
-Keyword: camera, Frequency: 6
-Keyword: targets, Frequency: 6
-Keyword: good, Frequency: 6
-Keyword: computer, Frequency: 6
-Keyword: progress, Frequency: 6
-Keyword: creating, Frequency: 6
-Keyword: 175, Frequency: 6
-Keyword: yes, Frequency: 6
-Keyword: considered, Frequency: 6
-Keyword: yolov5, Frequency: 6
-Keyword: consider, Frequency: 6
-Keyword: process, Frequency: 6
-Keyword: width, Frequency: 6
-Keyword: different, Frequency: 6
-Keyword: power, Frequency: 6
-Keyword: potential, Frequency: 6
-Keyword: small, Frequency: 5
-Keyword: region, Frequency: 5
-Keyword: proc, Frequency: 5
-Keyword: vision, Frequency: 5
-Keyword: criteria, Frequency: 5
-Keyword: neural, Frequency: 5
-Keyword: file, Frequency: 5
-Keyword: hardware, Frequency: 5
-Keyword: current, Frequency: 5
-Keyword: references, Frequency: 5
-Keyword: used, Frequency: 5
-Keyword: obc, Frequency: 5
-Keyword: focused, Frequency: 5
-Keyword: fov, Frequency: 5
-Keyword: make, Frequency: 5
-Keyword: testing, Frequency: 5
-Keyword: val, Frequency: 5
-Keyword: computational, Frequency: 5
-Keyword: new, Frequency: 5
-Keyword: number, Frequency: 5
-Keyword: fall, Frequency: 5
-Keyword: networks, Frequency: 5
-Keyword: classification, Frequency: 5
-Keyword: text, Frequency: 5
-Keyword: created, Frequency: 5
-Keyword: classes, Frequency: 5
-Keyword: like, Frequency: 5
-Keyword: total, Frequency: 5
-Keyword: determine, Frequency: 5
-Keyword: future, Frequency: 5
-Keyword: colors, Frequency: 5
-Keyword: 24, Frequency: 5
-Keyword: systems, Frequency: 5
-Keyword: contain, Frequency: 5
-Keyword: lidar, Frequency: 5
-Keyword: flight, Frequency: 5
-Keyword: lab, Frequency: 5
-Keyword: limited, Frequency: 5
-Keyword: test, Frequency: 5
-Keyword: opencv, Frequency: 5
-Keyword: 2023, Frequency: 4
-Keyword: 105, Frequency: 4
-Keyword: 2024, Frequency: 4
-Keyword: february, Frequency: 4
-Keyword: rulebook, Frequency: 4
-Keyword: given, Frequency: 4
-Keyword: cruz, Frequency: 4
-Keyword: 50, Frequency: 4
-Keyword: annotations, Frequency: 4
-Keyword: pattern, Frequency: 4
-Keyword: matrix, Frequency: 4
-Keyword: size, Frequency: 4
-Keyword: pp, Frequency: 4
-Keyword: validation, Frequency: 4
-Keyword: custom, Frequency: 4
-Keyword: marc, Frequency: 4
-Keyword: 26, Frequency: 4
-Keyword: 23, Frequency: 4
-Keyword: support, Frequency: 4
-Keyword: projects, Frequency: 4
-Keyword: problem, Frequency: 4
-Keyword: cnns, Frequency: 4
-Keyword: understanding, Frequency: 4
-Keyword: architecture, Frequency: 4
-Keyword: complexity, Frequency: 4
-Keyword: 27, Frequency: 4
-Keyword: drone, Frequency: 4
-Keyword: 2511, Frequency: 4
-Keyword: revisions, Frequency: 4
-Keyword: lack, Frequency: 4
-Keyword: scripting, Frequency: 4
-Keyword: capable, Frequency: 4
-Keyword: colored, Frequency: 4
-Keyword: individuals, Frequency: 4
-Keyword: box, Frequency: 4
-Keyword: 24000, Frequency: 4
-Keyword: libraries, Frequency: 4
-Keyword: 13, Frequency: 4
-Keyword: certain, Frequency: 4
-Keyword: increase, Frequency: 4
-Keyword: picture, Frequency: 3
-Keyword: plus, Frequency: 3
-Keyword: average, Frequency: 3
-Keyword: place, Frequency: 3
-Keyword: december, Frequency: 3
-Keyword: cover, Frequency: 3
-Keyword: overfitting, Frequency: 3
-Keyword: available, Frequency: 3
-Keyword: automatically, Frequency: 3
-Keyword: pytorch, Frequency: 3
-Keyword: general, Frequency: 3
-Keyword: applications, Frequency: 3
-Keyword: pros, Frequency: 3
-Keyword: operations, Frequency: 3
-Keyword: proposal, Frequency: 3
-Keyword: ocr, Frequency: 3
-Keyword: generated, Frequency: 3
-Keyword: obstacles, Frequency: 3
-Keyword: order, Frequency: 3
-Keyword: output, Frequency: 3
-Keyword: reduced, Frequency: 3
-Keyword: pretrained, Frequency: 3
-Keyword: fps, Frequency: 3
-Keyword: predicting, Frequency: 3
-Keyword: create, Frequency: 3
-Keyword: relative, Frequency: 3
-Keyword: date, Frequency: 3
-Keyword: report, Frequency: 3
-Keyword: normalization, Frequency: 3
-Keyword: accurate, Frequency: 3
-Keyword: possibly, Frequency: 3
-Keyword: group, Frequency: 3
-Keyword: nature, Frequency: 3
-Keyword: 47, Frequency: 3
-Keyword: developer, Frequency: 3
-Keyword: 400, Frequency: 3
-Keyword: just, Frequency: 3
-Keyword: expertise, Frequency: 3
-Keyword: timeline, Frequency: 3
-Keyword: core, Frequency: 3
-Keyword: cloned, Frequency: 3
-Keyword: contains, Frequency: 3
-Keyword: cons, Frequency: 3
-Keyword: ensure, Frequency: 3
-Keyword: start, Frequency: 3
-Keyword: 21, Frequency: 3
-Keyword: detecting, Frequency: 3
-Keyword: conf, Frequency: 3
-Keyword: ieee, Frequency: 3
-Keyword: localization, Frequency: 3
-Keyword: convolutional, Frequency: 3
-Keyword: value, Frequency: 3
-Keyword: collected, Frequency: 3
-Keyword: subpar, Frequency: 3
-Keyword: teams, Frequency: 3
-Keyword: led, Frequency: 3
-Keyword: especially, Frequency: 3
-Keyword: consideration, Frequency: 3
-Keyword: white, Frequency: 3
-Keyword: solid, Frequency: 3
-Keyword: kit, Frequency: 3
-Keyword: document, Frequency: 3
-Keyword: samples, Frequency: 3
-Keyword: modeling, Frequency: 3
-Keyword: character, Frequency: 3
-Keyword: knowledge, Frequency: 3
-Keyword: years, Frequency: 3
-Keyword: chart, Frequency: 3
-Keyword: types, Frequency: 3
-Keyword: mind, Frequency: 3
-Keyword: segmented, Frequency: 3
-Keyword: divide, Frequency: 3
-Keyword: ycoordinate, Frequency: 3
-Keyword: september, Frequency: 3
-Keyword: 500, Frequency: 3
-Keyword: 599, Frequency: 3
-Keyword: memory, Frequency: 3
-Keyword: information, Frequency: 3
-Keyword: environment, Frequency: 3
-Keyword: xcoordinate, Frequency: 3
-Keyword: simple, Frequency: 3
-Keyword: kerasocr, Frequency: 2
-Keyword: jason, Frequency: 2
-Keyword: jetson, Frequency: 2
-Keyword: implemented, Frequency: 2
-Keyword: kalam, Frequency: 2
-Keyword: josh, Frequency: 2
-Keyword: joshua, Frequency: 2
-Keyword: orin, Frequency: 2
+Entity: 2023, TF-IDF Score: 0.009765367732305392
+Entity: marc cruz, TF-IDF Score: Not Found
+Entity: abdul kalam, TF-IDF Score: Not Found
+Entity: max gross joshua estrada, TF-IDF Score: Not Found
+Entity: jason mar josh, TF-IDF Score: Not Found
+Entity: ng ethan, TF-IDF Score: Not Found
+Entity: sarkis gafayan rubayet, TF-IDF Score: Not Found
+Entity: david jackson, TF-IDF Score: Not Found
+Entity: 21 2023, TF-IDF Score: Not Found
+Entity: 1, TF-IDF Score: Not Found
+Entity: 2 2 fall 2023, TF-IDF Score: Not Found
+Entity: 3 21, TF-IDF Score: Not Found
+Entity: 4 23, TF-IDF Score: Not Found
+Entity: august, TF-IDF Score: 0.017089393531534436
+Entity: 231, TF-IDF Score: 0.004882683866152696
+Entity: 4 232, TF-IDF Score: Not Found
+Entity: 5 24, TF-IDF Score: Not Found
+Entity: 5 25, TF-IDF Score: Not Found
+Entity: 7 251, TF-IDF Score: Not Found
+Entity: 7 2511, TF-IDF Score: Not Found
+Entity: 7 2511, TF-IDF Score: Not Found
+Entity: 8 252, TF-IDF Score: Not Found
+Entity: 9 26, TF-IDF Score: Not Found
+Entity: october, TF-IDF Score: 0.021972077397687133
+Entity: 261, TF-IDF Score: 0.004882683866152696
+Entity: 10 262, TF-IDF Score: Not Found
+Entity: 12 263, TF-IDF Score: Not Found
+Entity: october, TF-IDF Score: 0.021972077397687133
+Entity: 13 271, TF-IDF Score: Not Found
+Entity: 13, TF-IDF Score: 0.009765367732305392
+Entity: 15, TF-IDF Score: 0.002441341933076348
+Entity: 17 4, TF-IDF Score: Not Found
+Entity: 17 5, TF-IDF Score: Not Found
+Entity: 18 1, TF-IDF Score: Not Found
+Entity: 2024, TF-IDF Score: 0.009765367732305392
+Entity: 2025, TF-IDF Score: 0.002441341933076348
+Entity: 2024, TF-IDF Score: 0.009765367732305392
+Entity: four, TF-IDF Score: 0.002441341933076348
+Entity: two, TF-IDF Score: 0.01220670966538174
+Entity: 85, TF-IDF Score: 0.004882683866152696
+Entity: 11, TF-IDF Score: 0.002441341933076348
+Entity: 1, TF-IDF Score: Not Found
+Entity: semicircle quarter, TF-IDF Score: Not Found
+Entity: triangle, TF-IDF Score: 0.004882683866152696
+Entity: pentagon, TF-IDF Score: 0.002441341933076348
+Entity: 75, TF-IDF Score: 0.004882683866152696
+Entity: 85 90, TF-IDF Score: Not Found
+Entity: joshua estrada, TF-IDF Score: Not Found
+Entity: josh ng jason mar max gross ethan, TF-IDF Score: Not Found
+Entity: 2 fall 2023, TF-IDF Score: Not Found
+Entity: 21, TF-IDF Score: 0.0073240257992290446
+Entity: august september, TF-IDF Score: Not Found
+Entity: august, TF-IDF Score: 0.017089393531534436
+Entity: october, TF-IDF Score: 0.021972077397687133
+Entity: october, TF-IDF Score: 0.021972077397687133
+Entity: december, TF-IDF Score: 0.0073240257992290446
+Entity: october, TF-IDF Score: 0.021972077397687133
+Entity: february, TF-IDF Score: 0.009765367732305392
+Entity: cnn, TF-IDF Score: 0.002441341933076348
+Entity: february august, TF-IDF Score: Not Found
+Entity: 22, TF-IDF Score: 0.004882683866152696
+Entity: august september, TF-IDF Score: Not Found
+Entity: 5, TF-IDF Score: Not Found
+Entity: 40, TF-IDF Score: 0.002441341933076348
+Entity: 23 years, TF-IDF Score: Not Found
+Entity: marc cruz, TF-IDF Score: Not Found
+Entity: each years, TF-IDF Score: Not Found
+Entity: previous years, TF-IDF Score: Not Found
+Entity: the current competition year, TF-IDF Score: Not Found
+Entity: 23, TF-IDF Score: 0.009765367732305392
+Entity: august, TF-IDF Score: 0.017089393531534436
+Entity: october, TF-IDF Score: 0.021972077397687133
+Entity: 231, TF-IDF Score: 0.004882683866152696
+Entity: david jackson, TF-IDF Score: Not Found
+Entity: opencv, TF-IDF Score: 0.01220670966538174
+Entity: 232, TF-IDF Score: 0.004882683866152696
+Entity: 24, TF-IDF Score: 0.01220670966538174
+Entity: two, TF-IDF Score: 0.01220670966538174
+Entity: 2, TF-IDF Score: Not Found
+Entity: 45, TF-IDF Score: 0.002441341933076348
+Entity: 3, TF-IDF Score: Not Found
+Entity: 25, TF-IDF Score: 0.004882683866152696
+Entity: 251, TF-IDF Score: 0.004882683866152696
+Entity: 2511, TF-IDF Score: 0.009765367732305392
+Entity: 5, TF-IDF Score: Not Found
+Entity: 4, TF-IDF Score: Not Found
+Entity: orin nano, TF-IDF Score: Not Found
+Entity: 2, TF-IDF Score: Not Found
+Entity: 5, TF-IDF Score: Not Found
+Entity: 18ghz, TF-IDF Score: 0.002441341933076348
+Entity: 32, TF-IDF Score: 0.002441341933076348
+Entity: 35 175, TF-IDF Score: Not Found
+Entity: 1, TF-IDF Score: Not Found
+Entity: 35 35, TF-IDF Score: Not Found
+Entity: 35 35, TF-IDF Score: Not Found
+Entity: 35 35, TF-IDF Score: Not Found
+Entity: 1 48, TF-IDF Score: Not Found
+Entity: 35, TF-IDF Score: 0.06835757412613774
+Entity: 176, TF-IDF Score: 0.002441341933076348
+Entity: 26 28, TF-IDF Score: Not Found
+Entity: 24, TF-IDF Score: 0.01220670966538174
+Entity: 24, TF-IDF Score: 0.01220670966538174
+Entity: 1 2, TF-IDF Score: Not Found
+Entity: 35, TF-IDF Score: 0.06835757412613774
+Entity: 300, TF-IDF Score: 0.004882683866152696
+Entity: 13 12, TF-IDF Score: Not Found
+Entity: 200 200 100, TF-IDF Score: Not Found
+Entity: zr10, TF-IDF Score: 0.002441341933076348
+Entity: 6mm, TF-IDF Score: 0.002441341933076348
+Entity: 1, TF-IDF Score: Not Found
+Entity: 1 184, TF-IDF Score: Not Found
+Entity: 381, TF-IDF Score: 0.002441341933076348
+Entity: 35, TF-IDF Score: 0.06835757412613774
+Entity: 2560, TF-IDF Score: 0.002441341933076348
+Entity: 1440p30 35, TF-IDF Score: Not Found
+Entity: 2028, TF-IDF Score: 0.004882683866152696
+Entity: 1080p50, TF-IDF Score: 0.002441341933076348
+Entity: 2028, TF-IDF Score: 0.004882683866152696
+Entity: 1520p40 1332, TF-IDF Score: Not Found
+Entity: 35 175, TF-IDF Score: Not Found
+Entity: 3, TF-IDF Score: Not Found
+Entity: 35 105, TF-IDF Score: Not Found
+Entity: 4, TF-IDF Score: Not Found
+Entity: 95, TF-IDF Score: 0.002441341933076348
+Entity: 70, TF-IDF Score: 0.002441341933076348
+Entity: 715, TF-IDF Score: 0.002441341933076348
+Entity: 795, TF-IDF Score: 0.002441341933076348
+Entity: 3, TF-IDF Score: Not Found
+Entity: 12, TF-IDF Score: 0.021972077397687133
+Entity: 3 12, TF-IDF Score: Not Found
+Entity: 28, TF-IDF Score: 0.004882683866152696
+Entity: 23, TF-IDF Score: 0.009765367732305392
+Entity: 34, TF-IDF Score: 0.002441341933076348
+Entity: 445, TF-IDF Score: 0.002441341933076348
+Entity: 1 2, TF-IDF Score: Not Found
+Entity: 400, TF-IDF Score: 0.0073240257992290446
+Entity: 250, TF-IDF Score: 0.004882683866152696
+Entity: 250, TF-IDF Score: 0.004882683866152696
+Entity: 100, TF-IDF Score: 0.017089393531534436
+Entity: 100, TF-IDF Score: 0.017089393531534436
+Entity: 350 350, TF-IDF Score: Not Found
+Entity: 200, TF-IDF Score: 0.021972077397687133
+Entity: 30, TF-IDF Score: 0.004882683866152696
+Entity: resolution 30, TF-IDF Score: Not Found
+Entity: 252, TF-IDF Score: 0.004882683866152696
+Entity: livox mid40, TF-IDF Score: Not Found
+Entity: 1 319, TF-IDF Score: Not Found
+Entity: 3, TF-IDF Score: Not Found
+Entity: 3, TF-IDF Score: Not Found
+Entity: 5 01, TF-IDF Score: Not Found
+Entity: 16, TF-IDF Score: 0.004882683866152696
+Entity: 175, TF-IDF Score: 0.014648051598458089
+Entity: 260, TF-IDF Score: 0.002441341933076348
+Entity: 35, TF-IDF Score: 0.06835757412613774
+Entity: 175, TF-IDF Score: 0.014648051598458089
+Entity: 8, TF-IDF Score: Not Found
+Entity: 3, TF-IDF Score: Not Found
+Entity: 35 105, TF-IDF Score: Not Found
+Entity: 35 105, TF-IDF Score: Not Found
+Entity: 35 105, TF-IDF Score: Not Found
+Entity: 2, TF-IDF Score: Not Found
+Entity: 760, TF-IDF Score: 0.002441341933076348
+Entity: 3 24 27, TF-IDF Score: Not Found
+Entity: 47 37 395, TF-IDF Score: Not Found
+Entity: 1 2, TF-IDF Score: Not Found
+Entity: 35, TF-IDF Score: 0.06835757412613774
+Entity: 800, TF-IDF Score: 0.004882683866152696
+Entity: 6 8, TF-IDF Score: Not Found
+Entity: 12, TF-IDF Score: 0.021972077397687133
+Entity: 200 200 150, TF-IDF Score: Not Found
+Entity: october, TF-IDF Score: 0.021972077397687133
+Entity: december, TF-IDF Score: 0.0073240257992290446
+Entity: 261, TF-IDF Score: 0.004882683866152696
+Entity: 1234, TF-IDF Score: 0.002441341933076348
+Entity: 4, TF-IDF Score: Not Found
+Entity: 100000, TF-IDF Score: 0.002441341933076348
+Entity: 4, TF-IDF Score: Not Found
+Entity: one, TF-IDF Score: 0.01220670966538174
+Entity: 3, TF-IDF Score: Not Found
+Entity: 5, TF-IDF Score: Not Found
+Entity: yolov5, TF-IDF Score: 0.014648051598458089
+Entity: 750, TF-IDF Score: 0.004882683866152696
+Entity: 500, TF-IDF Score: 0.0073240257992290446
+Entity: 24000, TF-IDF Score: 0.009765367732305392
+Entity: 6, TF-IDF Score: Not Found
+Entity: 100, TF-IDF Score: 0.017089393531534436
+Entity: 6, TF-IDF Score: Not Found
+Entity: yolov5, TF-IDF Score: 0.014648051598458089
+Entity: winter, TF-IDF Score: 0.004882683866152696
+Entity: 262, TF-IDF Score: 0.004882683866152696
+Entity: 2, TF-IDF Score: Not Found
+Entity: rgb, TF-IDF Score: 0.017089393531534436
+Entity: two, TF-IDF Score: 0.01220670966538174
+Entity: 0255, TF-IDF Score: 0.002441341933076348
+Entity: rgb, TF-IDF Score: 0.017089393531534436
+Entity: 255255255, TF-IDF Score: 0.002441341933076348
+Entity: second, TF-IDF Score: 0.002441341933076348
+Entity: rgb, TF-IDF Score: 0.017089393531534436
+Entity: rgb, TF-IDF Score: 0.017089393531534436
+Entity: 263, TF-IDF Score: 0.004882683866152696
+Entity: opencv, TF-IDF Score: 0.01220670966538174
+Entity: 90, TF-IDF Score: 0.004882683866152696
+Entity: the spring, TF-IDF Score: Not Found
+Entity: 27, TF-IDF Score: 0.009765367732305392
+Entity: october, TF-IDF Score: 0.021972077397687133
+Entity: february, TF-IDF Score: 0.009765367732305392
+Entity: 271, TF-IDF Score: 0.004882683866152696
+Entity: rcnn yolo, TF-IDF Score: Not Found
+Entity: 1, TF-IDF Score: Not Found
+Entity: 5, TF-IDF Score: Not Found
+Entity: 6 2, TF-IDF Score: Not Found
+Entity: rcnn description, TF-IDF Score: Not Found
+Entity: 7, TF-IDF Score: Not Found
+Entity: one, TF-IDF Score: 0.01220670966538174
+Entity: 9 10, TF-IDF Score: Not Found
+Entity: rcnn, TF-IDF Score: 0.014648051598458089
+Entity: rcnn, TF-IDF Score: 0.014648051598458089
+Entity: 2711, TF-IDF Score: 0.004882683866152696
+Entity: yolov5, TF-IDF Score: 0.014648051598458089
+Entity: between 0 and 1, TF-IDF Score: Not Found
+Entity: 100, TF-IDF Score: 0.017089393531534436
+Entity: 200, TF-IDF Score: 0.021972077397687133
+Entity: 2677, TF-IDF Score: 0.002441341933076348
+Entity: 56, TF-IDF Score: 0.002441341933076348
+Entity: 26, TF-IDF Score: 0.009765367732305392
+Entity: 99, TF-IDF Score: 0.004882683866152696
+Entity: 5, TF-IDF Score: Not Found
+Entity: 99, TF-IDF Score: 0.004882683866152696
+Entity: 77, TF-IDF Score: 0.002441341933076348
+Entity: 199, TF-IDF Score: 0.004882683866152696
+Entity: 6, TF-IDF Score: Not Found
+Entity: 199, TF-IDF Score: 0.004882683866152696
+Entity: 0, TF-IDF Score: Not Found
+Entity: 0 0815 0777 00345 00392, TF-IDF Score: Not Found
+Entity: the next few weeks, TF-IDF Score: Not Found
+Entity: 8, TF-IDF Score: Not Found
+Entity: about 24000, TF-IDF Score: Not Found
+Entity: an additional 24000, TF-IDF Score: Not Found
+Entity: 23000, TF-IDF Score: 0.002441341933076348
+Entity: 750, TF-IDF Score: 0.004882683866152696
+Entity: 500, TF-IDF Score: 0.0073240257992290446
+Entity: three, TF-IDF Score: 0.004882683866152696
+Entity: three, TF-IDF Score: 0.004882683866152696
+Entity: two, TF-IDF Score: 0.01220670966538174
+Entity: 7, TF-IDF Score: Not Found
+Entity: 0, TF-IDF Score: Not Found
+Entity: 7, TF-IDF Score: Not Found
+Entity: 0, TF-IDF Score: Not Found
+Entity: yolov5, TF-IDF Score: 0.014648051598458089
+Entity: yolov5, TF-IDF Score: 0.014648051598458089
+Entity: yolov5, TF-IDF Score: 0.014648051598458089
+Entity: 640, TF-IDF Score: 0.002441341933076348
+Entity: 16, TF-IDF Score: 0.004882683866152696
+Entity: 1250, TF-IDF Score: 0.002441341933076348
+Entity: more than 5 hours, TF-IDF Score: Not Found
+Entity: more than 24000, TF-IDF Score: Not Found
+Entity: 3, TF-IDF Score: Not Found
+Entity: nelson brown armstrong, TF-IDF Score: Not Found
+Entity: the beginning of the, TF-IDF Score: Not Found
+Entity: 4, TF-IDF Score: Not Found
+Entity: winter, TF-IDF Score: 0.004882683866152696
+Entity: spring 2024, TF-IDF Score: Not Found
+Entity: fall 2024, TF-IDF Score: Not Found
+Entity: two, TF-IDF Score: 0.01220670966538174
+Entity: 5, TF-IDF Score: Not Found
+Entity: 1, TF-IDF Score: Not Found
+Entity: 2, TF-IDF Score: Not Found
+Entity: 2012 pp 10971105 6, TF-IDF Score: Not Found
+Entity: g hinton, TF-IDF Score: Not Found
+Entity: 521, TF-IDF Score: 0.002441341933076348
+Entity: 436444 2015, TF-IDF Score: Not Found
+Entity: rcnn, TF-IDF Score: 0.014648051598458089
+Entity: 2015 pp 9199 8, TF-IDF Score: Not Found
+Entity: 2016 9, TF-IDF Score: Not Found
+Entity: 2016 pp 779788 10, TF-IDF Score: Not Found
+Entity: redmon, TF-IDF Score: 0.004882683866152696
+Entity: yolo9000, TF-IDF Score: 0.002441341933076348
+Entity: 2017, TF-IDF Score: 0.002441341933076348
