@@ -1,8 +1,14 @@
 nltk
+scikit-learn
 matplotlib
 pandas
 numpy
 seaborn
 conda-forge::langdetect
 wordcloud
+<<<<<<< HEAD
 inflect
+=======
+spacy
+fuzzywuzzy
+>>>>>>> main
