@@ -1,37 +1,68 @@
 Entity: 2023, Type: CARDINAL
-Entity: marc cruz, Type: PERSON
-Entity: abdul kalam, Type: PERSON
-Entity: max gross joshua estrada, Type: PERSON
-Entity: jason mar josh, Type: PERSON
-Entity: ng ethan, Type: PERSON
-Entity: sarkis gafayan rubayet, Type: ORG
-Entity: david jackson, Type: PERSON
-Entity: 21 2023, Type: DATE
+Entity: marc, Type: PERSON
+Entity: cruz, Type: PERSON
+Entity: abdul, Type: PERSON
+Entity: kalam, Type: PERSON
+Entity: max, Type: PERSON
+Entity: gross, Type: PERSON
+Entity: joshua, Type: PERSON
+Entity: estrada, Type: PERSON
+Entity: jason, Type: PERSON
+Entity: mar, Type: PERSON
+Entity: josh, Type: PERSON
+Entity: ng, Type: PERSON
+Entity: ethan, Type: PERSON
+Entity: sarkis, Type: ORG
+Entity: gafayan, Type: ORG
+Entity: rubayet, Type: ORG
+Entity: david, Type: PERSON
+Entity: jackson, Type: PERSON
+Entity: 21, Type: DATE
+Entity: 2023, Type: DATE
 Entity: 1, Type: CARDINAL
-Entity: 2 2 fall 2023, Type: DATE
-Entity: 3 21, Type: CARDINAL
-Entity: 4 23, Type: CARDINAL
+Entity: 2, Type: DATE
+Entity: 2, Type: DATE
+Entity: fall, Type: DATE
+Entity: 2023, Type: DATE
+Entity: 3, Type: CARDINAL
+Entity: 21, Type: CARDINAL
+Entity: 4, Type: CARDINAL
+Entity: 23, Type: CARDINAL
 Entity: august, Type: DATE
 Entity: 231, Type: CARDINAL
-Entity: 4 232, Type: CARDINAL
-Entity: 5 24, Type: CARDINAL
-Entity: 5 25, Type: CARDINAL
-Entity: 7 251, Type: CARDINAL
-Entity: 7 2511, Type: DATE
-Entity: 7 2511, Type: DATE
-Entity: 8 252, Type: CARDINAL
-Entity: 9 26, Type: CARDINAL
+Entity: 4, Type: CARDINAL
+Entity: 232, Type: CARDINAL
+Entity: 5, Type: CARDINAL
+Entity: 24, Type: CARDINAL
+Entity: 5, Type: CARDINAL
+Entity: 25, Type: CARDINAL
+Entity: 7, Type: CARDINAL
+Entity: 251, Type: CARDINAL
+Entity: 7, Type: DATE
+Entity: 2511, Type: DATE
+Entity: 7, Type: DATE
+Entity: 2511, Type: DATE
+Entity: 8, Type: CARDINAL
+Entity: 252, Type: CARDINAL
+Entity: 9, Type: CARDINAL
+Entity: 26, Type: CARDINAL
 Entity: october, Type: DATE
 Entity: 261, Type: CARDINAL
-Entity: 10 262, Type: CARDINAL
-Entity: 12 263, Type: CARDINAL
+Entity: 10, Type: CARDINAL
+Entity: 262, Type: CARDINAL
+Entity: 12, Type: CARDINAL
+Entity: 263, Type: CARDINAL
 Entity: october, Type: DATE
-Entity: 13 271, Type: CARDINAL
+Entity: 13, Type: CARDINAL
+Entity: 271, Type: CARDINAL
 Entity: 13, Type: CARDINAL
 Entity: 15, Type: CARDINAL
-Entity: 17 4, Type: CARDINAL
-Entity: 17 5, Type: CARDINAL
-Entity: 18 1, Type: CARDINAL
+Entity: 17, Type: CARDINAL
+Entity: 4, Type: CARDINAL
+Entity: 17, Type: CARDINAL
+Entity: 5, Type: CARDINAL
+Entity: 18, Type: CARDINAL
+Entity: 1, Type: CARDINAL
 Entity: 2024, Type: CARDINAL
 Entity: 2025, Type: CARDINAL
 Entity: 2024, Type: DATE
@@ -40,16 +71,28 @@ Entity: two, Type: CARDINAL
 Entity: 85, Type: CARDINAL
 Entity: 11, Type: CARDINAL
 Entity: 1, Type: CARDINAL
-Entity: semicircle quarter, Type: DATE
+Entity: semicircle, Type: DATE
+Entity: quarter, Type: DATE
 Entity: triangle, Type: PRODUCT
 Entity: pentagon, Type: ORG
 Entity: 75, Type: CARDINAL
-Entity: 85 90, Type: CARDINAL
-Entity: joshua estrada, Type: ORG
-Entity: josh ng jason mar max gross ethan, Type: PERSON
-Entity: 2 fall 2023, Type: DATE
+Entity: 85, Type: CARDINAL
+Entity: 90, Type: CARDINAL
+Entity: joshua, Type: ORG
+Entity: estrada, Type: ORG
+Entity: josh, Type: PERSON
+Entity: ng, Type: PERSON
+Entity: jason, Type: PERSON
+Entity: mar, Type: PERSON
+Entity: max, Type: PERSON
+Entity: gross, Type: PERSON
+Entity: ethan, Type: PERSON
+Entity: 2, Type: DATE
+Entity: fall, Type: DATE
+Entity: 2023, Type: DATE
 Entity: 21, Type: CARDINAL
-Entity: august september, Type: DATE
+Entity: august, Type: DATE
+Entity: september, Type: DATE
 Entity: august, Type: DATE
 Entity: october, Type: DATE
 Entity: october, Type: DATE
@@ -57,21 +100,31 @@ Entity: december, Type: DATE
 Entity: october, Type: DATE
 Entity: february, Type: DATE
 Entity: cnn, Type: ORG
-Entity: february august, Type: DATE
+Entity: february, Type: DATE
+Entity: august, Type: DATE
 Entity: 22, Type: CARDINAL
-Entity: august september, Type: DATE
+Entity: august, Type: DATE
+Entity: september, Type: DATE
 Entity: 5, Type: CARDINAL
 Entity: 40, Type: CARDINAL
-Entity: 23 years, Type: DATE
-Entity: marc cruz, Type: PERSON
-Entity: each years, Type: DATE
-Entity: previous years, Type: DATE
-Entity: the current competition year, Type: DATE
+Entity: 23, Type: DATE
+Entity: years, Type: DATE
+Entity: marc, Type: PERSON
+Entity: cruz, Type: PERSON
+Entity: each, Type: DATE
+Entity: years, Type: DATE
+Entity: previous, Type: DATE
+Entity: years, Type: DATE
+Entity: the, Type: DATE
+Entity: current, Type: DATE
+Entity: competition, Type: DATE
+Entity: year, Type: DATE
 Entity: 23, Type: CARDINAL
 Entity: august, Type: DATE
 Entity: october, Type: DATE
 Entity: 231, Type: CARDINAL
-Entity: david jackson, Type: PERSON
+Entity: david, Type: PERSON
+Entity: jackson, Type: PERSON
 Entity: opencv, Type: NORP
 Entity: 232, Type: CARDINAL
 Entity: 24, Type: CARDINAL
@@ -84,42 +137,58 @@ Entity: 251, Type: CARDINAL
 Entity: 2511, Type: DATE
 Entity: 5, Type: CARDINAL
 Entity: 4, Type: CARDINAL
-Entity: orin nano, Type: PERSON
+Entity: orin, Type: PERSON
+Entity: nano, Type: PERSON
 Entity: 2, Type: CARDINAL
 Entity: 5, Type: CARDINAL
 Entity: 18ghz, Type: CARDINAL
 Entity: 32, Type: CARDINAL
-Entity: 35 175, Type: CARDINAL
+Entity: 35, Type: CARDINAL
+Entity: 175, Type: CARDINAL
 Entity: 1, Type: CARDINAL
-Entity: 35 35, Type: DATE
-Entity: 35 35, Type: DATE
-Entity: 35 35, Type: CARDINAL
-Entity: 1 48, Type: DATE
+Entity: 35, Type: DATE
+Entity: 35, Type: DATE
+Entity: 35, Type: DATE
+Entity: 35, Type: DATE
+Entity: 35, Type: CARDINAL
+Entity: 35, Type: CARDINAL
+Entity: 1, Type: DATE
+Entity: 48, Type: DATE
 Entity: 35, Type: CARDINAL
 Entity: 176, Type: CARDINAL
-Entity: 26 28, Type: CARDINAL
+Entity: 26, Type: CARDINAL
+Entity: 28, Type: CARDINAL
 Entity: 24, Type: CARDINAL
 Entity: 24, Type: CARDINAL
-Entity: 1 2, Type: CARDINAL
+Entity: 1, Type: CARDINAL
+Entity: 2, Type: CARDINAL
 Entity: 35, Type: CARDINAL
 Entity: 300, Type: CARDINAL
-Entity: 13 12, Type: CARDINAL
-Entity: 200 200 100, Type: MONEY
+Entity: 13, Type: CARDINAL
+Entity: 12, Type: CARDINAL
+Entity: 200, Type: MONEY
+Entity: 200, Type: MONEY
+Entity: 100, Type: MONEY
 Entity: zr10, Type: PRODUCT
 Entity: 6mm, Type: QUANTITY
 Entity: 1, Type: CARDINAL
-Entity: 1 184, Type: CARDINAL
+Entity: 1, Type: CARDINAL
+Entity: 184, Type: CARDINAL
 Entity: 381, Type: CARDINAL
 Entity: 35, Type: CARDINAL
 Entity: 2560, Type: DATE
-Entity: 1440p30 35, Type: DATE
+Entity: 1440p30, Type: DATE
+Entity: 35, Type: DATE
 Entity: 2028, Type: DATE
 Entity: 1080p50, Type: PERSON
 Entity: 2028, Type: DATE
-Entity: 1520p40 1332, Type: DATE
-Entity: 35 175, Type: CARDINAL
+Entity: 1520p40, Type: DATE
+Entity: 1332, Type: DATE
+Entity: 35, Type: CARDINAL
+Entity: 175, Type: CARDINAL
 Entity: 3, Type: CARDINAL
-Entity: 35 105, Type: CARDINAL
+Entity: 35, Type: CARDINAL
+Entity: 105, Type: CARDINAL
 Entity: 4, Type: CARDINAL
 Entity: 95, Type: CARDINAL
 Entity: 70, Type: CARDINAL
@@ -127,27 +196,34 @@ Entity: 715, Type: CARDINAL
 Entity: 795, Type: CARDINAL
 Entity: 3, Type: CARDINAL
 Entity: 12, Type: CARDINAL
-Entity: 3 12, Type: CARDINAL
+Entity: 3, Type: CARDINAL
+Entity: 12, Type: CARDINAL
 Entity: 28, Type: CARDINAL
 Entity: 23, Type: CARDINAL
 Entity: 34, Type: CARDINAL
 Entity: 445, Type: CARDINAL
-Entity: 1 2, Type: CARDINAL
+Entity: 1, Type: CARDINAL
+Entity: 2, Type: CARDINAL
 Entity: 400, Type: CARDINAL
 Entity: 250, Type: CARDINAL
 Entity: 250, Type: CARDINAL
 Entity: 100, Type: CARDINAL
 Entity: 100, Type: CARDINAL
-Entity: 350 350, Type: CARDINAL
+Entity: 350, Type: CARDINAL
+Entity: 350, Type: CARDINAL
 Entity: 200, Type: CARDINAL
 Entity: 30, Type: CARDINAL
-Entity: resolution 30, Type: LAW
+Entity: resolution, Type: LAW
+Entity: 30, Type: LAW
 Entity: 252, Type: CARDINAL
-Entity: livox mid40, Type: PERSON
-Entity: 1 319, Type: CARDINAL
+Entity: livox, Type: PERSON
+Entity: mid40, Type: PERSON
+Entity: 1, Type: CARDINAL
+Entity: 319, Type: CARDINAL
 Entity: 3, Type: CARDINAL
 Entity: 3, Type: CARDINAL
-Entity: 5 01, Type: DATE
+Entity: 5, Type: DATE
+Entity: 01, Type: DATE
 Entity: 16, Type: CARDINAL
 Entity: 175, Type: CARDINAL
 Entity: 260, Type: CARDINAL
@@ -155,19 +231,30 @@ Entity: 35, Type: CARDINAL
 Entity: 175, Type: CARDINAL
 Entity: 8, Type: CARDINAL
 Entity: 3, Type: CARDINAL
-Entity: 35 105, Type: DATE
-Entity: 35 105, Type: DATE
-Entity: 35 105, Type: CARDINAL
+Entity: 35, Type: DATE
+Entity: 105, Type: DATE
+Entity: 35, Type: DATE
+Entity: 105, Type: DATE
+Entity: 35, Type: CARDINAL
+Entity: 105, Type: CARDINAL
 Entity: 2, Type: CARDINAL
 Entity: 760, Type: CARDINAL
-Entity: 3 24 27, Type: CARDINAL
-Entity: 47 37 395, Type: DATE
-Entity: 1 2, Type: CARDINAL
+Entity: 3, Type: CARDINAL
+Entity: 24, Type: CARDINAL
+Entity: 27, Type: CARDINAL
+Entity: 47, Type: DATE
+Entity: 37, Type: DATE
+Entity: 395, Type: DATE
+Entity: 1, Type: CARDINAL
+Entity: 2, Type: CARDINAL
 Entity: 35, Type: CARDINAL
 Entity: 800, Type: CARDINAL
-Entity: 6 8, Type: DATE
+Entity: 6, Type: DATE
+Entity: 8, Type: DATE
 Entity: 12, Type: CARDINAL
-Entity: 200 200 150, Type: MONEY
+Entity: 200, Type: MONEY
+Entity: 200, Type: MONEY
+Entity: 150, Type: MONEY
 Entity: october, Type: DATE
 Entity: december, Type: DATE
 Entity: 261, Type: CARDINAL
@@ -200,24 +287,32 @@ Entity: rgb, Type: ORG
 Entity: 263, Type: CARDINAL
 Entity: opencv, Type: NORP
 Entity: 90, Type: CARDINAL
-Entity: the spring, Type: DATE
+Entity: the, Type: DATE
+Entity: spring, Type: DATE
 Entity: 27, Type: CARDINAL
 Entity: october, Type: DATE
 Entity: february, Type: DATE
 Entity: 271, Type: CARDINAL
-Entity: rcnn yolo, Type: PERSON
+Entity: rcnn, Type: PERSON
+Entity: yolo, Type: PERSON
 Entity: 1, Type: CARDINAL
 Entity: 5, Type: CARDINAL
-Entity: 6 2, Type: CARDINAL
-Entity: rcnn description, Type: PERSON
+Entity: 6, Type: CARDINAL
+Entity: 2, Type: CARDINAL
+Entity: rcnn, Type: PERSON
+Entity: description, Type: PERSON
 Entity: 7, Type: CARDINAL
 Entity: one, Type: CARDINAL
-Entity: 9 10, Type: CARDINAL
+Entity: 9, Type: CARDINAL
+Entity: 10, Type: CARDINAL
 Entity: rcnn, Type: PERSON
 Entity: rcnn, Type: PERSON
 Entity: 2711, Type: DATE
 Entity: yolov5, Type: PERSON
-Entity: between 0 and 1, Type: CARDINAL
+Entity: between, Type: CARDINAL
+Entity: 0, Type: CARDINAL
+Entity: and, Type: CARDINAL
+Entity: 1, Type: CARDINAL
 Entity: 100, Type: CARDINAL
 Entity: 200, Type: CARDINAL
 Entity: 2677, Type: DATE
@@ -231,11 +326,21 @@ Entity: 199, Type: CARDINAL
 Entity: 6, Type: CARDINAL
 Entity: 199, Type: CARDINAL
 Entity: 0, Type: CARDINAL
-Entity: 0 0815 0777 00345 00392, Type: DATE
-Entity: the next few weeks, Type: DATE
+Entity: 0, Type: DATE
+Entity: 0815, Type: DATE
+Entity: 0777, Type: DATE
+Entity: 00345, Type: DATE
+Entity: 00392, Type: DATE
+Entity: the, Type: DATE
+Entity: next, Type: DATE
+Entity: few, Type: DATE
+Entity: weeks, Type: DATE
 Entity: 8, Type: CARDINAL
-Entity: about 24000, Type: CARDINAL
-Entity: an additional 24000, Type: CARDINAL
+Entity: about, Type: CARDINAL
+Entity: 24000, Type: CARDINAL
+Entity: an, Type: CARDINAL
+Entity: additional, Type: CARDINAL
+Entity: 24000, Type: CARDINAL
 Entity: 23000, Type: CARDINAL
 Entity: 750, Type: CARDINAL
 Entity: 500, Type: CARDINAL
@@ -252,27 +357,51 @@ Entity: yolov5, Type: LOC
 Entity: 640, Type: CARDINAL
 Entity: 16, Type: CARDINAL
 Entity: 1250, Type: CARDINAL
-Entity: more than 5 hours, Type: TIME
-Entity: more than 24000, Type: CARDINAL
+Entity: more, Type: TIME
+Entity: than, Type: TIME
+Entity: 5, Type: TIME
+Entity: hours, Type: TIME
+Entity: more, Type: CARDINAL
+Entity: than, Type: CARDINAL
+Entity: 24000, Type: CARDINAL
 Entity: 3, Type: CARDINAL
-Entity: nelson brown armstrong, Type: PERSON
-Entity: the beginning of the, Type: DATE
+Entity: nelson, Type: PERSON
+Entity: brown, Type: PERSON
+Entity: armstrong, Type: PERSON
+Entity: the, Type: DATE
+Entity: beginning, Type: DATE
+Entity: of, Type: DATE
+Entity: the, Type: DATE
 Entity: 4, Type: CARDINAL
 Entity: winter, Type: DATE
-Entity: spring 2024, Type: DATE
-Entity: fall 2024, Type: DATE
+Entity: spring, Type: DATE
+Entity: 2024, Type: DATE
+Entity: fall, Type: DATE
+Entity: 2024, Type: DATE
 Entity: two, Type: CARDINAL
 Entity: 5, Type: CARDINAL
 Entity: 1, Type: CARDINAL
 Entity: 2, Type: CARDINAL
-Entity: 2012 pp 10971105 6, Type: DATE
-Entity: g hinton, Type: ORG
+Entity: 2012, Type: DATE
+Entity: pp, Type: DATE
+Entity: 10971105, Type: DATE
+Entity: 6, Type: DATE
+Entity: g, Type: ORG
+Entity: hinton, Type: ORG
 Entity: 521, Type: CARDINAL
-Entity: 436444 2015, Type: DATE
+Entity: 436444, Type: DATE
+Entity: 2015, Type: DATE
 Entity: rcnn, Type: PERSON
-Entity: 2015 pp 9199 8, Type: DATE
-Entity: 2016 9, Type: DATE
-Entity: 2016 pp 779788 10, Type: DATE
+Entity: 2015, Type: DATE
+Entity: pp, Type: DATE
+Entity: 9199, Type: DATE
+Entity: 8, Type: DATE
+Entity: 2016, Type: DATE
+Entity: 9, Type: DATE
+Entity: 2016, Type: DATE
+Entity: pp, Type: DATE
+Entity: 779788, Type: DATE
+Entity: 10, Type: DATE
 Entity: redmon, Type: ORG
 Entity: yolo9000, Type: ORG
 Entity: 2017, Type: DATE
