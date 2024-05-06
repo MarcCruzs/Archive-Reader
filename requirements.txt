@@ -8,3 +8,4 @@ conda-forge::langdetect
 wordcloud
 spacy
 fuzzywuzzy
+conda-forge::transformers

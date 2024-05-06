@@ -1,85 +1,103 @@
-Entity: marc cruz, Type: PERSON
-Entity: abdul kalam, Type: PERSON
-Entity: max gross joshua estrada, Type: PERSON
-Entity: jason mar josh, Type: PERSON
-Entity: ng ethan, Type: PERSON
+Entity: suas competition software team, Type: ORG
+Entity: marc cruz abdul kalam, Type: PERSON
+Entity: joshua, Type: PERSON
+Entity: jason mar josh ng, Type: PERSON
 Entity: sarkis gafayan rubayet, Type: ORG
-Entity: david jackson, Type: PERSON
-Entity: two two fall two thousand and twenty-three, Type: DATE
-Entity: august, Type: DATE
-Entity: october, Type: DATE
-Entity: october, Type: DATE
-Entity: two thousand and twenty-five, Type: DATE
-Entity: two thousand and twenty-four, Type: DATE
-Entity: semicircle quarter, Type: DATE
-Entity: triangle, Type: PRODUCT
-Entity: pentagon, Type: ORG
-Entity: eighty-five ninety, Type: DATE
-Entity: joshua estrada, Type: ORG
-Entity: josh ng jason mar max gross ethan, Type: PERSON
+Entity: mujahid david jackson, Type: PERSON
+Entity: sep twenty-one, Type: DATE
+Entity: suas, Type: ORG
+Entity: two fall two thousand and twenty-three, Type: DATE
 Entity: august september, Type: DATE
-Entity: august, Type: DATE
-Entity: october, Type: DATE
-Entity: october, Type: DATE
-Entity: december, Type: DATE
-Entity: october, Type: DATE
-Entity: february, Type: DATE
+Entity: august october, Type: DATE
+Entity: seven two thousand, five hundred and eleven, Type: DATE
+Entity: eight two hundred and fifty-two, Type: DATE
+Entity: nine twenty-six, Type: DATE
+Entity: october december, Type: DATE
+Entity: ml, Type: PRODUCT
+Entity: october february, Type: DATE
+Entity: suas, Type: ORG
+Entity: suas, Type: ORG
+Entity: the cpp suas team, Type: ORG
+Entity: suas, Type: ORG
+Entity: yearly, Type: DATE
+Entity: two thousand and twenty-four, Type: DATE
+Entity: uas, Type: ORG
+Entity: uas, Type: ORG
+Entity: suas competition technical design, Type: ORG
+Entity: pentagon, Type: ORG
+Entity: abdul kalam, Type: PERSON
+Entity: joshua estrada, Type: PERSON
+Entity: josh ng, Type: PERSON
+Entity: mar max, Type: PERCENT
+Entity: sarkis, Type: GPE
+Entity: marc cruz, Type: GPE
+Entity: two fall two thousand and twenty-three, Type: DATE
+Entity: suas mission, Type: ORG
+Entity: august september, Type: DATE
+Entity: august october, Type: DATE
+Entity: october december, Type: DATE
+Entity: october february, Type: DATE
 Entity: cnn, Type: ORG
 Entity: february august, Type: DATE
-Entity: september, Type: DATE
+Entity: august september, Type: DATE
+Entity: suas, Type: ORG
+Entity: marc cruz, Type: GPE
+Entity: suas, Type: ORG
+Entity: suas, Type: ORG
 Entity: twenty-three years, Type: DATE
 Entity: marc cruz, Type: PERSON
 Entity: each years, Type: DATE
 Entity: previous years, Type: DATE
 Entity: the current competition year, Type: DATE
-Entity: august, Type: DATE
+Entity: suas, Type: ORG
+Entity: suas, Type: ORG
+Entity: august october, Type: DATE
 Entity: david jackson, Type: PERSON
-Entity: opencv, Type: NORP
-Entity: two thousand, Type: DATE
-Entity: orin nano, Type: PERSON
-Entity: cortexa72, Type: PRODUCT
-Entity: zr10, Type: PRODUCT
-Entity: livox mid40, Type: PERSON
-Entity: six eight, Type: TIME
-Entity: october, Type: DATE
-Entity: december, Type: DATE
-Entity: yolov5, Type: PERSON
-Entity: yolov5, Type: PERSON
+Entity: jetson orin nano, Type: PERSON
+Entity: 64bit soc, Type: PRODUCT
+Entity: gpu, Type: ORG
+Entity: forty-eight, Type: TIME
+Entity: forty-seven, Type: TIME
+Entity: oakd pro w poe, Type: ORG
+Entity: siyi, Type: PERSON
+Entity: rpi hq, Type: GPE
+Entity: rplidar, Type: PERSON
+Entity: livox, Type: PERSON
+Entity: rplidar, Type: PERSON
+Entity: october december, Type: DATE
 Entity: winter, Type: DATE
+Entity: rgb, Type: ORG
 Entity: rgb, Type: ORG
 Entity: rgb, Type: ORG
 Entity: second, Type: ORDINAL
 Entity: rgb, Type: ORG
-Entity: rgb, Type: ORG
-Entity: opencv, Type: NORP
-Entity: the spring, Type: DATE
-Entity: october, Type: DATE
-Entity: february, Type: DATE
-Entity: rcnn yolo, Type: PERSON
-Entity: rcnn description, Type: PERSON
-Entity: rcnn, Type: PERSON
-Entity: rcnn, Type: PERSON
-Entity: two thousand,, Type: DATE
-Entity: yolov5, Type: PERSON
-Entity: two thousand, Type: DATE
-Entity: fifty-six, Type: DATE
-Entity: seventy-seven, Type: DATE
+Entity: alphanumeric ml, Type: ORG
+Entity: the spring semester, Type: DATE
+Entity: october february, Type: DATE
+Entity: gpus, Type: GPE
+Entity: jpeg, Type: ORG
+Entity: xmax, Type: PERSON
+Entity: ymax, Type: GPE
+Entity: xmax, Type: PERSON
 Entity: the next few weeks, Type: DATE
-Entity: yolov5, Type: PERSON
-Entity: yolov5, Type: LOC
-Entity: yolov5, Type: LOC
+Entity: python trainpy, Type: PERSON
 Entity: more than five hours, Type: TIME
+Entity: gpu, Type: ORG
 Entity: nelson brown armstrong, Type: PERSON
-Entity: the beginning of the, Type: DATE
+Entity: earlier in the summer, Type: DATE
+Entity: the beginning of the semester, Type: DATE
+Entity: the fall semester, Type: DATE
+Entity: this semester, Type: DATE
 Entity: winter, Type: DATE
+Entity: jetson orin nano, Type: ORG
+Entity: suas software, Type: ORG
 Entity: spring two thousand and twenty-four, Type: DATE
-Entity: two thousand and twelve, Type: DATE
+Entity: suas, Type: ORG
+Entity: g e hinton, Type: ORG
+Entity: lecun, Type: ORG
 Entity: g hinton, Type: ORG
-Entity: rcnn, Type: PERSON
-Entity: two thousand and fifteen pp nine thousand, Type: DATE
-Entity: two thousand and sixteen nine, Type: DATE
-Entity: redmon, Type: ORG
-Entity: two thousand and sixteen pp seven hundred and seventy-nine thousand,, Type: DATE
-Entity: redmon, Type: ORG
-Entity: yolo9000, Type: ORG
-Entity: two thousand and seventeen, Type: DATE
+Entity: girshick, Type: PERSON
+Entity: j sun, Type: PERSON
+Entity: x zhang s ren, Type: PERSON
+Entity: s divvala, Type: PERSON
+Entity: a farhadi yolo9000, Type: ORG
