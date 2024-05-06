@@ -1,4 +1,4 @@
-Entity: 2023, TF-IDF Score: 0.009765367732305392
+Entity: two thousand and twenty-three, TF-IDF Score: Not Found
 Entity: marc cruz, TF-IDF Score: Not Found
 Entity: abdul kalam, TF-IDF Score: Not Found
 Entity: max gross joshua estrada, TF-IDF Score: Not Found
@@ -6,273 +6,317 @@ Entity: jason mar josh, TF-IDF Score: Not Found
 Entity: ng ethan, TF-IDF Score: Not Found
 Entity: sarkis gafayan rubayet, TF-IDF Score: Not Found
 Entity: david jackson, TF-IDF Score: Not Found
-Entity: 21 2023, TF-IDF Score: Not Found
-Entity: 1, TF-IDF Score: Not Found
-Entity: 2 2 fall 2023, TF-IDF Score: Not Found
-Entity: 3 21, TF-IDF Score: Not Found
-Entity: 4 23, TF-IDF Score: Not Found
-Entity: august, TF-IDF Score: 0.017089393531534436
-Entity: 231, TF-IDF Score: 0.004882683866152696
-Entity: 4 232, TF-IDF Score: Not Found
-Entity: 5 24, TF-IDF Score: Not Found
-Entity: 5 25, TF-IDF Score: Not Found
-Entity: 7 251, TF-IDF Score: Not Found
-Entity: 7 2511, TF-IDF Score: Not Found
-Entity: 7 2511, TF-IDF Score: Not Found
-Entity: 8 252, TF-IDF Score: Not Found
-Entity: 9 26, TF-IDF Score: Not Found
-Entity: october, TF-IDF Score: 0.021972077397687133
-Entity: 261, TF-IDF Score: 0.004882683866152696
-Entity: 10 262, TF-IDF Score: Not Found
-Entity: 12 263, TF-IDF Score: Not Found
-Entity: october, TF-IDF Score: 0.021972077397687133
-Entity: 13 271, TF-IDF Score: Not Found
-Entity: 13, TF-IDF Score: 0.009765367732305392
-Entity: 15, TF-IDF Score: 0.002441341933076348
-Entity: 17 4, TF-IDF Score: Not Found
-Entity: 17 5, TF-IDF Score: Not Found
-Entity: 18 1, TF-IDF Score: Not Found
-Entity: 2024, TF-IDF Score: 0.009765367732305392
-Entity: 2025, TF-IDF Score: 0.002441341933076348
-Entity: 2024, TF-IDF Score: 0.009765367732305392
-Entity: four, TF-IDF Score: 0.002441341933076348
-Entity: two, TF-IDF Score: 0.01220670966538174
-Entity: 85, TF-IDF Score: 0.004882683866152696
-Entity: 11, TF-IDF Score: 0.002441341933076348
-Entity: 1, TF-IDF Score: Not Found
+Entity: twenty-one, TF-IDF Score: Not Found
+Entity: twenty-three, TF-IDF Score: Not Found
+Entity: one, TF-IDF Score: 0.15909104686362577
+Entity: two two fall two thousand and twenty-three, TF-IDF Score: Not Found
+Entity: twenty-one, TF-IDF Score: Not Found
+Entity: twenty-two, TF-IDF Score: Not Found
+Entity: four, TF-IDF Score: 0.08249165392928744
+Entity: twenty-three, TF-IDF Score: Not Found
+Entity: august, TF-IDF Score: 0.013748608988214572
+Entity: two hundred and thirty-one, TF-IDF Score: Not Found
+Entity: two hundred and thirty-two, TF-IDF Score: Not Found
+Entity: five twenty-four, TF-IDF Score: Not Found
+Entity: five twenty-five, TF-IDF Score: Not Found
+Entity: seven, TF-IDF Score: 0.05695852295117466
+Entity: two hundred and fifty-one, TF-IDF Score: Not Found
+Entity: two thousand, TF-IDF Score: Not Found
+Entity: five hundred and eleven, TF-IDF Score: Not Found
+Entity: two thousand, TF-IDF Score: Not Found
+Entity: five hundred and eleven, TF-IDF Score: Not Found
+Entity: eight, TF-IDF Score: 0.03928173996632735
+Entity: two hundred and fifty-two, TF-IDF Score: Not Found
+Entity: nine twenty-six, TF-IDF Score: Not Found
+Entity: october, TF-IDF Score: 0.017676782984847306
+Entity: two hundred and sixty-one, TF-IDF Score: Not Found
+Entity: two hundred and sixty-two, TF-IDF Score: Not Found
+Entity: two hundred and sixty-three, TF-IDF Score: Not Found
+Entity: twenty-seven, TF-IDF Score: Not Found
+Entity: october, TF-IDF Score: 0.017676782984847306
+Entity: thirteen, TF-IDF Score: 0.00785634799326547
+Entity: two hundred and seventy-one, TF-IDF Score: Not Found
+Entity: thirteen two thousand, TF-IDF Score: Not Found
+Entity: eleven, TF-IDF Score: 0.013748608988214572
+Entity: fifteen, TF-IDF Score: 0.009820434991581837
+Entity: three, TF-IDF Score: 0.1198093068972984
+Entity: seventeen four, TF-IDF Score: Not Found
+Entity: seventeen five, TF-IDF Score: Not Found
+Entity: eighteen, TF-IDF Score: 0.0019640869983163674
+Entity: two thousand and twenty-four, TF-IDF Score: Not Found
+Entity: two thousand and twenty-five, TF-IDF Score: Not Found
+Entity: two thousand and twenty-four, TF-IDF Score: Not Found
+Entity: four, TF-IDF Score: 0.08249165392928744
+Entity: two, TF-IDF Score: 0.1983727868299531
+Entity: eighty-five, TF-IDF Score: Not Found
+Entity: one, TF-IDF Score: 0.15909104686362577
 Entity: semicircle quarter, TF-IDF Score: Not Found
-Entity: triangle, TF-IDF Score: 0.004882683866152696
-Entity: pentagon, TF-IDF Score: 0.002441341933076348
-Entity: 75, TF-IDF Score: 0.004882683866152696
-Entity: 85 90, TF-IDF Score: Not Found
+Entity: triangle, TF-IDF Score: 0.003928173996632735
+Entity: pentagon, TF-IDF Score: 0.0019640869983163674
+Entity: seventy-five, TF-IDF Score: Not Found
+Entity: eighty-five ninety, TF-IDF Score: Not Found
 Entity: joshua estrada, TF-IDF Score: Not Found
 Entity: josh ng jason mar max gross ethan, TF-IDF Score: Not Found
-Entity: 2 fall 2023, TF-IDF Score: Not Found
-Entity: 21, TF-IDF Score: 0.0073240257992290446
+Entity: two, TF-IDF Score: 0.1983727868299531
+Entity: twenty-three, TF-IDF Score: Not Found
+Entity: twenty-one, TF-IDF Score: Not Found
 Entity: august september, TF-IDF Score: Not Found
-Entity: august, TF-IDF Score: 0.017089393531534436
-Entity: october, TF-IDF Score: 0.021972077397687133
-Entity: october, TF-IDF Score: 0.021972077397687133
-Entity: december, TF-IDF Score: 0.0073240257992290446
-Entity: october, TF-IDF Score: 0.021972077397687133
-Entity: february, TF-IDF Score: 0.009765367732305392
-Entity: cnn, TF-IDF Score: 0.002441341933076348
+Entity: august, TF-IDF Score: 0.013748608988214572
+Entity: october, TF-IDF Score: 0.017676782984847306
+Entity: october, TF-IDF Score: 0.017676782984847306
+Entity: december, TF-IDF Score: 0.005892260994949102
+Entity: october, TF-IDF Score: 0.017676782984847306
+Entity: february, TF-IDF Score: 0.00785634799326547
+Entity: cnn, TF-IDF Score: 0.0019640869983163674
 Entity: february august, TF-IDF Score: Not Found
-Entity: 22, TF-IDF Score: 0.004882683866152696
-Entity: august september, TF-IDF Score: Not Found
-Entity: 5, TF-IDF Score: Not Found
-Entity: 40, TF-IDF Score: 0.002441341933076348
-Entity: 23 years, TF-IDF Score: Not Found
+Entity: twenty-two, TF-IDF Score: Not Found
+Entity: september, TF-IDF Score: 0.005892260994949102
+Entity: five, TF-IDF Score: 0.1806960038451058
+Entity: forty, TF-IDF Score: 0.019640869983163674
+Entity: twenty-three years, TF-IDF Score: Not Found
 Entity: marc cruz, TF-IDF Score: Not Found
 Entity: each years, TF-IDF Score: Not Found
 Entity: previous years, TF-IDF Score: Not Found
 Entity: the current competition year, TF-IDF Score: Not Found
-Entity: 23, TF-IDF Score: 0.009765367732305392
-Entity: august, TF-IDF Score: 0.017089393531534436
-Entity: october, TF-IDF Score: 0.021972077397687133
-Entity: 231, TF-IDF Score: 0.004882683866152696
+Entity: twenty-three, TF-IDF Score: Not Found
+Entity: august, TF-IDF Score: 0.013748608988214572
+Entity: two hundred and thirty-one, TF-IDF Score: Not Found
 Entity: david jackson, TF-IDF Score: Not Found
-Entity: opencv, TF-IDF Score: 0.01220670966538174
-Entity: 232, TF-IDF Score: 0.004882683866152696
-Entity: 24, TF-IDF Score: 0.01220670966538174
-Entity: two, TF-IDF Score: 0.01220670966538174
-Entity: 2, TF-IDF Score: Not Found
-Entity: 45, TF-IDF Score: 0.002441341933076348
-Entity: 3, TF-IDF Score: Not Found
-Entity: 25, TF-IDF Score: 0.004882683866152696
-Entity: 251, TF-IDF Score: 0.004882683866152696
-Entity: 2511, TF-IDF Score: 0.009765367732305392
-Entity: 5, TF-IDF Score: Not Found
-Entity: 4, TF-IDF Score: Not Found
+Entity: opencv, TF-IDF Score: 0.009820434991581837
+Entity: two hundred and thirty-two, TF-IDF Score: Not Found
+Entity: twenty-four, TF-IDF Score: Not Found
+Entity: two, TF-IDF Score: 0.1983727868299531
+Entity: two, TF-IDF Score: 0.1983727868299531
+Entity: forty-five, TF-IDF Score: Not Found
+Entity: three, TF-IDF Score: 0.1198093068972984
+Entity: twenty-five, TF-IDF Score: Not Found
+Entity: two hundred and fifty-one, TF-IDF Score: Not Found
+Entity: two thousand, TF-IDF Score: Not Found
+Entity: five hundred and eleven, TF-IDF Score: Not Found
+Entity: five, TF-IDF Score: 0.1806960038451058
+Entity: four, TF-IDF Score: 0.08249165392928744
 Entity: orin nano, TF-IDF Score: Not Found
-Entity: 2, TF-IDF Score: Not Found
-Entity: 5, TF-IDF Score: Not Found
-Entity: 18ghz, TF-IDF Score: 0.002441341933076348
-Entity: 32, TF-IDF Score: 0.002441341933076348
-Entity: 35 175, TF-IDF Score: Not Found
-Entity: 1, TF-IDF Score: Not Found
-Entity: 35 35, TF-IDF Score: Not Found
-Entity: 35 35, TF-IDF Score: Not Found
-Entity: 35 35, TF-IDF Score: Not Found
-Entity: 1 48, TF-IDF Score: Not Found
-Entity: 35, TF-IDF Score: 0.06835757412613774
-Entity: 176, TF-IDF Score: 0.002441341933076348
-Entity: 26 28, TF-IDF Score: Not Found
-Entity: 24, TF-IDF Score: 0.01220670966538174
-Entity: 24, TF-IDF Score: 0.01220670966538174
-Entity: 1 2, TF-IDF Score: Not Found
-Entity: 35, TF-IDF Score: 0.06835757412613774
-Entity: 300, TF-IDF Score: 0.004882683866152696
-Entity: 13 12, TF-IDF Score: Not Found
-Entity: 200 200 100, TF-IDF Score: Not Found
-Entity: zr10, TF-IDF Score: 0.002441341933076348
-Entity: 6mm, TF-IDF Score: 0.002441341933076348
-Entity: 1, TF-IDF Score: Not Found
-Entity: 1 184, TF-IDF Score: Not Found
-Entity: 381, TF-IDF Score: 0.002441341933076348
-Entity: 35, TF-IDF Score: 0.06835757412613774
-Entity: 2560, TF-IDF Score: 0.002441341933076348
-Entity: 1440p30 35, TF-IDF Score: Not Found
-Entity: 2028, TF-IDF Score: 0.004882683866152696
-Entity: 1080p50, TF-IDF Score: 0.002441341933076348
-Entity: 2028, TF-IDF Score: 0.004882683866152696
-Entity: 1520p40 1332, TF-IDF Score: Not Found
-Entity: 35 175, TF-IDF Score: Not Found
-Entity: 3, TF-IDF Score: Not Found
-Entity: 35 105, TF-IDF Score: Not Found
-Entity: 4, TF-IDF Score: Not Found
-Entity: 95, TF-IDF Score: 0.002441341933076348
-Entity: 70, TF-IDF Score: 0.002441341933076348
-Entity: 715, TF-IDF Score: 0.002441341933076348
-Entity: 795, TF-IDF Score: 0.002441341933076348
-Entity: 3, TF-IDF Score: Not Found
-Entity: 12, TF-IDF Score: 0.021972077397687133
-Entity: 3 12, TF-IDF Score: Not Found
-Entity: 28, TF-IDF Score: 0.004882683866152696
-Entity: 23, TF-IDF Score: 0.009765367732305392
-Entity: 34, TF-IDF Score: 0.002441341933076348
-Entity: 445, TF-IDF Score: 0.002441341933076348
-Entity: 1 2, TF-IDF Score: Not Found
-Entity: 400, TF-IDF Score: 0.0073240257992290446
-Entity: 250, TF-IDF Score: 0.004882683866152696
-Entity: 250, TF-IDF Score: 0.004882683866152696
-Entity: 100, TF-IDF Score: 0.017089393531534436
-Entity: 100, TF-IDF Score: 0.017089393531534436
-Entity: 350 350, TF-IDF Score: Not Found
-Entity: 200, TF-IDF Score: 0.021972077397687133
-Entity: 30, TF-IDF Score: 0.004882683866152696
-Entity: resolution 30, TF-IDF Score: Not Found
-Entity: 252, TF-IDF Score: 0.004882683866152696
+Entity: two, TF-IDF Score: 0.1983727868299531
+Entity: one hundred and seventy-one, TF-IDF Score: Not Found
+Entity: three, TF-IDF Score: 0.1198093068972984
+Entity: one hundred and seventy three, TF-IDF Score: Not Found
+Entity: two, TF-IDF Score: 0.1983727868299531
+Entity: five, TF-IDF Score: 0.1806960038451058
+Entity: one, TF-IDF Score: 0.15909104686362577
+Entity: five, TF-IDF Score: 0.1806960038451058
+Entity: cortexa72, TF-IDF Score: 0.0019640869983163674
+Entity: 18ghz, TF-IDF Score: 0.0019640869983163674
+Entity: five, TF-IDF Score: 0.1806960038451058
+Entity: thirty-two, TF-IDF Score: Not Found
+Entity: thirty-five, TF-IDF Score: Not Found
+Entity: one hundred and seventy-five, TF-IDF Score: Not Found
+Entity: thirty-five thirty-five, TF-IDF Score: Not Found
+Entity: thirty-five thirty-five, TF-IDF Score: Not Found
+Entity: thirty-five thirty-five, TF-IDF Score: Not Found
+Entity: two, TF-IDF Score: 0.1983727868299531
+Entity: six, TF-IDF Score: 0.03928173996632735
+Entity: two, TF-IDF Score: 0.1983727868299531
+Entity: thirty-five thirty-five, TF-IDF Score: Not Found
+Entity: forty-seven, TF-IDF Score: Not Found
+Entity: thirty-five, TF-IDF Score: Not Found
+Entity: thirty-five, TF-IDF Score: Not Found
+Entity: one hundred and seventy-six, TF-IDF Score: Not Found
+Entity: two, TF-IDF Score: 0.1983727868299531
+Entity: two, TF-IDF Score: 0.1983727868299531
+Entity: twenty-six twenty-eight, TF-IDF Score: Not Found
+Entity: twenty-four, TF-IDF Score: Not Found
+Entity: twenty-four, TF-IDF Score: Not Found
+Entity: twenty-seven, TF-IDF Score: Not Found
+Entity: one, TF-IDF Score: 0.15909104686362577
+Entity: two, TF-IDF Score: 0.1983727868299531
+Entity: three, TF-IDF Score: 0.1198093068972984
+Entity: thirty-five, TF-IDF Score: Not Found
+Entity: three hundred three hundred two hundred one hundred, TF-IDF Score: Not Found
+Entity: twelve eight five, TF-IDF Score: Not Found
+Entity: two hundred two hundred one hundred fifty two thousand, TF-IDF Score: Not Found
+Entity: five hundred and eleven, TF-IDF Score: Not Found
+Entity: zr10, TF-IDF Score: 0.0019640869983163674
+Entity: 6mm, TF-IDF Score: 0.0019640869983163674
+Entity: one five hundred and ninety-nine, TF-IDF Score: Not Found
+Entity: thirty-five, TF-IDF Score: Not Found
+Entity: one, TF-IDF Score: 0.15909104686362577
+Entity: one hundred and eighty-four, TF-IDF Score: Not Found
+Entity: thirty-five, TF-IDF Score: Not Found
+Entity: thirty-five, TF-IDF Score: Not Found
+Entity: one hundred and seventy-five, TF-IDF Score: Not Found
+Entity: five hundred and sixty, TF-IDF Score: Not Found
+Entity: 1440p30, TF-IDF Score: 0.0019640869983163674
+Entity: one hundred and seventy-five, TF-IDF Score: Not Found
+Entity: one thousand, TF-IDF Score: 0.003928173996632735
+Entity: three hundred and thirty-two, TF-IDF Score: Not Found
+Entity: one hundred and seventy-five, TF-IDF Score: Not Found
+Entity: fifty-five, TF-IDF Score: Not Found
+Entity: one hundred and five, TF-IDF Score: Not Found
+Entity: ninety-five, TF-IDF Score: Not Found
+Entity: seven hundred and fifteen, TF-IDF Score: Not Found
+Entity: seven hundred and ninety-five three, TF-IDF Score: Not Found
+Entity: sixty-three, TF-IDF Score: Not Found
+Entity: twenty-eight, TF-IDF Score: Not Found
+Entity: twenty-three, TF-IDF Score: Not Found
+Entity: thirty-four, TF-IDF Score: Not Found
+Entity: four hundred and forty-five, TF-IDF Score: Not Found
+Entity: one, TF-IDF Score: 0.15909104686362577
+Entity: two, TF-IDF Score: 0.1983727868299531
+Entity: three, TF-IDF Score: 0.1198093068972984
+Entity: thirty-five, TF-IDF Score: Not Found
+Entity: four hundred four hundred two hundred and fifty two hundred and fifty one hundred one hundred, TF-IDF Score: Not Found
+Entity: three hundred and fifty three hundred and fifty two hundred two hundred fifty fifty, TF-IDF Score: Not Found
+Entity: thirty, TF-IDF Score: 0.08838391492423653
+Entity: two, TF-IDF Score: 0.1983727868299531
+Entity: two hundred and fifty-two, TF-IDF Score: Not Found
 Entity: livox mid40, TF-IDF Score: Not Found
-Entity: 1 319, TF-IDF Score: Not Found
-Entity: 3, TF-IDF Score: Not Found
-Entity: 3, TF-IDF Score: Not Found
-Entity: 5 01, TF-IDF Score: Not Found
-Entity: 16, TF-IDF Score: 0.004882683866152696
-Entity: 175, TF-IDF Score: 0.014648051598458089
-Entity: 260, TF-IDF Score: 0.002441341933076348
-Entity: 35, TF-IDF Score: 0.06835757412613774
-Entity: 175, TF-IDF Score: 0.014648051598458089
-Entity: 8, TF-IDF Score: Not Found
-Entity: 3, TF-IDF Score: Not Found
-Entity: 35 105, TF-IDF Score: Not Found
-Entity: 35 105, TF-IDF Score: Not Found
-Entity: 35 105, TF-IDF Score: Not Found
-Entity: 2, TF-IDF Score: Not Found
-Entity: 760, TF-IDF Score: 0.002441341933076348
-Entity: 3 24 27, TF-IDF Score: Not Found
-Entity: 47 37 395, TF-IDF Score: Not Found
-Entity: 1 2, TF-IDF Score: Not Found
-Entity: 35, TF-IDF Score: 0.06835757412613774
-Entity: 800, TF-IDF Score: 0.004882683866152696
-Entity: 6 8, TF-IDF Score: Not Found
-Entity: 12, TF-IDF Score: 0.021972077397687133
-Entity: 200 200 150, TF-IDF Score: Not Found
-Entity: october, TF-IDF Score: 0.021972077397687133
-Entity: december, TF-IDF Score: 0.0073240257992290446
-Entity: 261, TF-IDF Score: 0.004882683866152696
-Entity: 1234, TF-IDF Score: 0.002441341933076348
-Entity: 4, TF-IDF Score: Not Found
-Entity: 100000, TF-IDF Score: 0.002441341933076348
-Entity: 4, TF-IDF Score: Not Found
-Entity: one, TF-IDF Score: 0.01220670966538174
-Entity: 3, TF-IDF Score: Not Found
-Entity: 5, TF-IDF Score: Not Found
-Entity: yolov5, TF-IDF Score: 0.014648051598458089
-Entity: 750, TF-IDF Score: 0.004882683866152696
-Entity: 500, TF-IDF Score: 0.0073240257992290446
-Entity: 24000, TF-IDF Score: 0.009765367732305392
-Entity: 6, TF-IDF Score: Not Found
-Entity: 100, TF-IDF Score: 0.017089393531534436
-Entity: 6, TF-IDF Score: Not Found
-Entity: yolov5, TF-IDF Score: 0.014648051598458089
-Entity: winter, TF-IDF Score: 0.004882683866152696
-Entity: 262, TF-IDF Score: 0.004882683866152696
-Entity: 2, TF-IDF Score: Not Found
-Entity: rgb, TF-IDF Score: 0.017089393531534436
-Entity: two, TF-IDF Score: 0.01220670966538174
-Entity: 0255, TF-IDF Score: 0.002441341933076348
-Entity: rgb, TF-IDF Score: 0.017089393531534436
-Entity: 255255255, TF-IDF Score: 0.002441341933076348
-Entity: second, TF-IDF Score: 0.002441341933076348
-Entity: rgb, TF-IDF Score: 0.017089393531534436
-Entity: rgb, TF-IDF Score: 0.017089393531534436
-Entity: 263, TF-IDF Score: 0.004882683866152696
-Entity: opencv, TF-IDF Score: 0.01220670966538174
-Entity: 90, TF-IDF Score: 0.004882683866152696
+Entity: one three hundred and nineteen three three five hundred and ninety-nine, TF-IDF Score: Not Found
+Entity: five one, TF-IDF Score: Not Found
+Entity: thirty-five, TF-IDF Score: Not Found
+Entity: one hundred and seventy-five, TF-IDF Score: Not Found
+Entity: two hundred and sixty, TF-IDF Score: Not Found
+Entity: one hundred and seventy-five eight, TF-IDF Score: Not Found
+Entity: ten, TF-IDF Score: 0.017676782984847306
+Entity: three, TF-IDF Score: 0.1198093068972984
+Entity: thirty-five, TF-IDF Score: Not Found
+Entity: one hundred and five, TF-IDF Score: Not Found
+Entity: thirty-five, TF-IDF Score: Not Found
+Entity: one hundred and five, TF-IDF Score: Not Found
+Entity: thirty-five, TF-IDF Score: Not Found
+Entity: one hundred and five, TF-IDF Score: Not Found
+Entity: two, TF-IDF Score: 0.1983727868299531
+Entity: one hundred and ninety two, TF-IDF Score: Not Found
+Entity: seven hundred and sixty, TF-IDF Score: Not Found
+Entity: one hundred and ninety two four, TF-IDF Score: Not Found
+Entity: three twenty-four, TF-IDF Score: Not Found
+Entity: twenty-seven, TF-IDF Score: Not Found
+Entity: forty-seven thirty-seven three hundred and ninety-five, TF-IDF Score: Not Found
+Entity: one, TF-IDF Score: 0.15909104686362577
+Entity: two, TF-IDF Score: 0.1983727868299531
+Entity: three, TF-IDF Score: 0.1198093068972984
+Entity: thirty-five, TF-IDF Score: Not Found
+Entity: six eight, TF-IDF Score: Not Found
+Entity: twelve, TF-IDF Score: 0.019640869983163674
+Entity: three, TF-IDF Score: 0.1198093068972984
+Entity: two hundred two hundred one hundred and fifty one hundred twenty-six, TF-IDF Score: Not Found
+Entity: october, TF-IDF Score: 0.017676782984847306
+Entity: december, TF-IDF Score: 0.005892260994949102
+Entity: two hundred and sixty-one, TF-IDF Score: Not Found
+Entity: one thousand, TF-IDF Score: 0.003928173996632735
+Entity: two hundred and thirty-four, TF-IDF Score: Not Found
+Entity: four, TF-IDF Score: 0.08249165392928744
+Entity: over one hundred thousand, TF-IDF Score: Not Found
+Entity: four, TF-IDF Score: 0.08249165392928744
+Entity: one, TF-IDF Score: 0.15909104686362577
+Entity: three, TF-IDF Score: 0.1198093068972984
+Entity: five, TF-IDF Score: 0.1806960038451058
+Entity: yolov5, TF-IDF Score: 0.011784521989898204
+Entity: seven hundred and fifty, TF-IDF Score: Not Found
+Entity: five hundred, TF-IDF Score: Not Found
+Entity: twenty-four thousand, TF-IDF Score: Not Found
+Entity: six, TF-IDF Score: 0.03928173996632735
+Entity: one hundred, TF-IDF Score: Not Found
+Entity: six, TF-IDF Score: 0.03928173996632735
+Entity: yolov5, TF-IDF Score: 0.011784521989898204
+Entity: winter, TF-IDF Score: 0.003928173996632735
+Entity: two hundred and sixty-two, TF-IDF Score: Not Found
+Entity: two, TF-IDF Score: 0.1983727868299531
+Entity: rgb, TF-IDF Score: 0.013748608988214572
+Entity: two, TF-IDF Score: 0.1983727868299531
+Entity: two hundred and fifty-five, TF-IDF Score: Not Found
+Entity: rgb, TF-IDF Score: 0.013748608988214572
+Entity: zero, TF-IDF Score: 0.011784521989898204
+Entity: two hundred and fifty-five million, TF-IDF Score: Not Found
+Entity: two hundred and fifty-five thousand, TF-IDF Score: Not Found
+Entity: two hundred and fifty-five, TF-IDF Score: Not Found
+Entity: second, TF-IDF Score: 0.0019640869983163674
+Entity: rgb, TF-IDF Score: 0.013748608988214572
+Entity: rgb, TF-IDF Score: 0.013748608988214572
+Entity: two hundred and sixty-three, TF-IDF Score: Not Found
+Entity: opencv, TF-IDF Score: 0.009820434991581837
+Entity: ninety, TF-IDF Score: 0.03142539197306188
 Entity: the spring, TF-IDF Score: Not Found
-Entity: 27, TF-IDF Score: 0.009765367732305392
-Entity: october, TF-IDF Score: 0.021972077397687133
-Entity: february, TF-IDF Score: 0.009765367732305392
-Entity: 271, TF-IDF Score: 0.004882683866152696
+Entity: twenty-seven, TF-IDF Score: Not Found
+Entity: october, TF-IDF Score: 0.017676782984847306
+Entity: february, TF-IDF Score: 0.00785634799326547
+Entity: two hundred and seventy-one, TF-IDF Score: Not Found
 Entity: rcnn yolo, TF-IDF Score: Not Found
-Entity: 1, TF-IDF Score: Not Found
-Entity: 5, TF-IDF Score: Not Found
-Entity: 6 2, TF-IDF Score: Not Found
+Entity: one, TF-IDF Score: 0.15909104686362577
+Entity: five, TF-IDF Score: 0.1806960038451058
+Entity: six, TF-IDF Score: 0.03928173996632735
 Entity: rcnn description, TF-IDF Score: Not Found
-Entity: 7, TF-IDF Score: Not Found
-Entity: one, TF-IDF Score: 0.01220670966538174
-Entity: 9 10, TF-IDF Score: Not Found
-Entity: rcnn, TF-IDF Score: 0.014648051598458089
-Entity: rcnn, TF-IDF Score: 0.014648051598458089
-Entity: 2711, TF-IDF Score: 0.004882683866152696
-Entity: yolov5, TF-IDF Score: 0.014648051598458089
-Entity: between 0 and 1, TF-IDF Score: Not Found
-Entity: 100, TF-IDF Score: 0.017089393531534436
-Entity: 200, TF-IDF Score: 0.021972077397687133
-Entity: 2677, TF-IDF Score: 0.002441341933076348
-Entity: 56, TF-IDF Score: 0.002441341933076348
-Entity: 26, TF-IDF Score: 0.009765367732305392
-Entity: 99, TF-IDF Score: 0.004882683866152696
-Entity: 5, TF-IDF Score: Not Found
-Entity: 99, TF-IDF Score: 0.004882683866152696
-Entity: 77, TF-IDF Score: 0.002441341933076348
-Entity: 199, TF-IDF Score: 0.004882683866152696
-Entity: 6, TF-IDF Score: Not Found
-Entity: 199, TF-IDF Score: 0.004882683866152696
-Entity: 0, TF-IDF Score: Not Found
-Entity: 0 0815 0777 00345 00392, TF-IDF Score: Not Found
+Entity: seven eight, TF-IDF Score: Not Found
+Entity: three, TF-IDF Score: 0.1198093068972984
+Entity: one, TF-IDF Score: 0.15909104686362577
+Entity: nine ten, TF-IDF Score: Not Found
+Entity: rcnn, TF-IDF Score: 0.011784521989898204
+Entity: rcnn, TF-IDF Score: 0.011784521989898204
+Entity: two thousand, TF-IDF Score: Not Found
+Entity: eleven, TF-IDF Score: 0.013748608988214572
+Entity: yolov5, TF-IDF Score: 0.011784521989898204
+Entity: between zero, TF-IDF Score: Not Found
+Entity: one, TF-IDF Score: 0.15909104686362577
+Entity: one hundred, TF-IDF Score: Not Found
+Entity: two hundred, TF-IDF Score: Not Found
+Entity: two thousand, TF-IDF Score: Not Found
+Entity: six hundred and seventy-seven, TF-IDF Score: Not Found
+Entity: fifty-six, TF-IDF Score: Not Found
+Entity: twenty-six, TF-IDF Score: Not Found
+Entity: ninety-nine and five, TF-IDF Score: Not Found
+Entity: ninety-nine, TF-IDF Score: Not Found
+Entity: seventy-seven, TF-IDF Score: Not Found
+Entity: one hundred and ninety-nine and six, TF-IDF Score: Not Found
+Entity: one hundred and ninety-nine, TF-IDF Score: Not Found
+Entity: zero, TF-IDF Score: 0.011784521989898204
+Entity: three hundred and forty-five, TF-IDF Score: Not Found
 Entity: the next few weeks, TF-IDF Score: Not Found
-Entity: 8, TF-IDF Score: Not Found
-Entity: about 24000, TF-IDF Score: Not Found
-Entity: an additional 24000, TF-IDF Score: Not Found
-Entity: 23000, TF-IDF Score: 0.002441341933076348
-Entity: 750, TF-IDF Score: 0.004882683866152696
-Entity: 500, TF-IDF Score: 0.0073240257992290446
-Entity: three, TF-IDF Score: 0.004882683866152696
-Entity: three, TF-IDF Score: 0.004882683866152696
-Entity: two, TF-IDF Score: 0.01220670966538174
-Entity: 7, TF-IDF Score: Not Found
-Entity: 0, TF-IDF Score: Not Found
-Entity: 7, TF-IDF Score: Not Found
-Entity: 0, TF-IDF Score: Not Found
-Entity: yolov5, TF-IDF Score: 0.014648051598458089
-Entity: yolov5, TF-IDF Score: 0.014648051598458089
-Entity: yolov5, TF-IDF Score: 0.014648051598458089
-Entity: 640, TF-IDF Score: 0.002441341933076348
-Entity: 16, TF-IDF Score: 0.004882683866152696
-Entity: 1250, TF-IDF Score: 0.002441341933076348
-Entity: more than 5 hours, TF-IDF Score: Not Found
-Entity: more than 24000, TF-IDF Score: Not Found
-Entity: 3, TF-IDF Score: Not Found
+Entity: eight, TF-IDF Score: 0.03928173996632735
+Entity: about twenty-four thousand, TF-IDF Score: Not Found
+Entity: twenty-three thousand, TF-IDF Score: Not Found
+Entity: seven hundred and fifty, TF-IDF Score: Not Found
+Entity: five hundred, TF-IDF Score: Not Found
+Entity: three, TF-IDF Score: 0.1198093068972984
+Entity: three, TF-IDF Score: 0.1198093068972984
+Entity: two, TF-IDF Score: 0.1983727868299531
+Entity: seven, TF-IDF Score: 0.05695852295117466
+Entity: zero, TF-IDF Score: 0.011784521989898204
+Entity: seven, TF-IDF Score: 0.05695852295117466
+Entity: zero, TF-IDF Score: 0.011784521989898204
+Entity: yolov5, TF-IDF Score: 0.011784521989898204
+Entity: yolov5, TF-IDF Score: 0.011784521989898204
+Entity: yolov5, TF-IDF Score: 0.011784521989898204
+Entity: six hundred and forty, TF-IDF Score: Not Found
+Entity: fifty, TF-IDF Score: 0.04713808795959282
+Entity: one thousand, TF-IDF Score: 0.003928173996632735
+Entity: two hundred and fifty, TF-IDF Score: 0.003928173996632735
+Entity: more than five hours, TF-IDF Score: Not Found
+Entity: more than twenty-four thousand, TF-IDF Score: Not Found
+Entity: three, TF-IDF Score: 0.1198093068972984
 Entity: nelson brown armstrong, TF-IDF Score: Not Found
 Entity: the beginning of the, TF-IDF Score: Not Found
-Entity: 4, TF-IDF Score: Not Found
-Entity: winter, TF-IDF Score: 0.004882683866152696
-Entity: spring 2024, TF-IDF Score: Not Found
-Entity: fall 2024, TF-IDF Score: Not Found
-Entity: two, TF-IDF Score: 0.01220670966538174
-Entity: 5, TF-IDF Score: Not Found
-Entity: 1, TF-IDF Score: Not Found
-Entity: 2, TF-IDF Score: Not Found
-Entity: 2012 pp 10971105 6, TF-IDF Score: Not Found
+Entity: four, TF-IDF Score: 0.08249165392928744
+Entity: winter, TF-IDF Score: 0.003928173996632735
+Entity: spring two thousand and twenty-four, TF-IDF Score: Not Found
+Entity: two thousand and twenty-four, TF-IDF Score: Not Found
+Entity: two, TF-IDF Score: 0.1983727868299531
+Entity: five, TF-IDF Score: 0.1806960038451058
+Entity: one, TF-IDF Score: 0.15909104686362577
+Entity: two, TF-IDF Score: 0.1983727868299531
+Entity: two thousand and twelve, TF-IDF Score: Not Found
+Entity: nine hundred and seventy-one thousand, TF-IDF Score: Not Found
+Entity: one hundred and five, TF-IDF Score: Not Found
 Entity: g hinton, TF-IDF Score: Not Found
-Entity: 521, TF-IDF Score: 0.002441341933076348
-Entity: 436444 2015, TF-IDF Score: Not Found
-Entity: rcnn, TF-IDF Score: 0.014648051598458089
-Entity: 2015 pp 9199 8, TF-IDF Score: Not Found
-Entity: 2016 9, TF-IDF Score: Not Found
-Entity: 2016 pp 779788 10, TF-IDF Score: Not Found
-Entity: redmon, TF-IDF Score: 0.004882683866152696
-Entity: yolo9000, TF-IDF Score: 0.002441341933076348
-Entity: 2017, TF-IDF Score: 0.002441341933076348
+Entity: five hundred and twenty-one no seven thousand, TF-IDF Score: Not Found
+Entity: five hundred and fifty-three, TF-IDF Score: Not Found
+Entity: four hundred and forty-four, TF-IDF Score: Not Found
+Entity: two thousand and fifteen seven, TF-IDF Score: Not Found
+Entity: rcnn, TF-IDF Score: 0.011784521989898204
+Entity: two thousand and fifteen pp nine thousand, TF-IDF Score: Not Found
+Entity: one hundred and ninety-nine eight, TF-IDF Score: Not Found
+Entity: two thousand and sixteen nine, TF-IDF Score: Not Found
+Entity: redmon, TF-IDF Score: 0.003928173996632735
+Entity: two thousand and sixteen pp seven hundred and seventy-nine thousand, TF-IDF Score: Not Found
+Entity: ten, TF-IDF Score: 0.017676782984847306
+Entity: redmon, TF-IDF Score: 0.003928173996632735
+Entity: yolo9000, TF-IDF Score: 0.0019640869983163674
+Entity: two thousand and seventeen, TF-IDF Score: Not Found

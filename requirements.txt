@@ -6,9 +6,5 @@ numpy
 seaborn
 conda-forge::langdetect
 wordcloud
-<<<<<<< HEAD
-inflect
-=======
 spacy
 fuzzywuzzy
->>>>>>> main
