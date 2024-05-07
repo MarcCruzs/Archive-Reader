@@ -2,16 +2,12 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 import string
-from .EntityExtractor import EntityExtractor
+from fuzzywuzzy import process
 
 class QuestionAndAnswerGenerator:
-    def __init__(self):
-        self.entity_extractor = EntityExtractor()
-
-    def generate_questions_and_answers(self, raw_data_file_path):
-        entities = self.entity_extractor.process_text_file(raw_data_file_path)
-        questions, contexts, train_answers = self.generate_questions_and_answers_for_entities(raw_data_file_path, entities)
-        return questions, contexts, train_answers
+    def __init__(self, text_processor, entity_extractor):
+        self.text_processor = text_processor
+        self.entity_extractor = entity_extractor
 
     def generate_questions_and_answers_for_entities(self, raw_data_file_path, entities):
         train_answers = []
@@ -45,11 +41,11 @@ class QuestionAndAnswerGenerator:
                 contexts.append(entity_context)
 
                 # Generate train answer for the current context
-                train_answers.append(self.generate_train_answers(entity_context))
+                train_answers.append(self.generate_train_answers(entity_context, entity))
 
         return questions, contexts, train_answers
 
-    def generate_train_answers(self, context):
+    def generate_train_answers(self, context, entity):
         # Tokenize the context
         tokens = word_tokenize(context.lower())
 
@@ -73,16 +69,19 @@ class QuestionAndAnswerGenerator:
         # Find answers based on top scoring words related to the entity
         answers = []
         for keyword, _ in top_words:
-            start_index = context.lower().find(keyword)
-            if start_index != -1:
-                end_index = start_index + len(keyword)
-                answers.append((start_index, end_index))
+            # Use fuzzy string matching to find the closest match for the entity name
+            entity_match, score = process.extractOne(entity, context.lower().split())
+            if score > 80:  # Adjust threshold as needed
+                start_index = context.lower().find(entity_match)
+                if start_index != -1:
+                    end_index = start_index + len(entity_match)
+                    answers.append({'start_index': start_index, 'end_index': end_index})
 
         return answers
 
     def generate_context_for_entity(self, raw_data_file_path, entity):
         # Get cleaned sentences
-        cleaned_sentences = self.text_processor.process_text_file(raw_data_file_path)
+        cleaned_sentences = self.text_processor.process_text(raw_data_file_path)
 
         # Find sentences containing the entity
         entity_sentences = [sentence for sentence in cleaned_sentences if entity in sentence]

@@ -10,20 +10,10 @@ model = BertForQuestionAnswering.from_pretrained('bert-base-uncased')
 # Instantiate DataGeneration class
 data_generator = DataGeneration()
 
-# Define your dataset and data loaders
-# Example: Assume you have ner_output_file = "cleaned_datasets/NER_output_entities.txt"
+# Generate data
 raw_data_file = "raw_datasets\SUAS-Competition-FALL2023-Final-Report.txt"
 train_contexts, train_questions, train_answers = data_generator.generate_data(raw_data_file)
-print(len(train_contexts))
-print(len(train_questions))
-print(len(train_answers))
-# Convert train_contexts and train_questions to lists of strings if they are not already
-# if isinstance(train_contexts, str):
-#     train_contexts = train_contexts.split('\n')  # Split based on newline characters
 
-# if isinstance(train_questions, str):
-#     train_questions = train_questions.split('\n')  # Split based on newline characters
-    
 # Tokenize inputs
 inputs = tokenizer(train_contexts, 
                    train_questions, 
