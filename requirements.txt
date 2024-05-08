@@ -4,8 +4,10 @@ matplotlib
 pandas
 numpy
 seaborn
-conda-forge::langdetect
+langdetect
 wordcloud
 spacy
 fuzzywuzzy
-conda-forge::transformers
+transformers
+torch
+torchaudio
