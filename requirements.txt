@@ -4,7 +4,8 @@ matplotlib
 pandas
 numpy
 seaborn
-conda-forge::langdetect
+langdetect
 wordcloud
 spacy
 fuzzywuzzy
+# scikit-learn
